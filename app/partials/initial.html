@@ -1,0 +1,130 @@
+<div class="jumbotron">
+    <h1>HP IDOL API Mashathon</h1>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h4>Enter the list of vendors</h4>
+    </div>
+    <div class="panel-body">
+
+        <div class="row">
+            <div class="col-sm-2">
+                <button class="btn btn-success" data-ng-click="addVendorRow()">
+                    Add Another Vendor
+                </button>
+            </div>
+            <div class="col-sm-2">
+                <div class="button" ng-file-select ng-model="files">
+                    <button class="btn btn-success">
+                        Upload Vendors List
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <button class="btn btn-success" data-ng-click="searchVendor()">
+                    Search Vendors
+                </button>
+            </div>
+            <div class="col-sm-2">
+                <input class="form-control" type="text" data-ng-model="searchVendorTerm">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width:20%;">Vendor Name</th>
+                            <th style="width:70%;">Analysis</th>
+                            <th style="width:10%;">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-ng-repeat="vend in vendors track by $index">
+                            <td><input class="form-control" type="text" data-ng-model="vend.name"></td>
+                            <td>
+
+                                <jqcloud data-ng-show="showClouds" words="vend.cloud" width="700" height="300" steps="10"></jqcloud>
+
+                                <table data-ng-show="showSentiment" class="sentiment table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:30%;">Tweet</th>
+                                            <th style="width:10%;">Sentiment Score</th>
+                                            <th style="width:30%;">Positives</th>
+                                            <th style="width:30%;">Negatives</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-ng-repeat="twit in vend.tweets" class="{{twit[0].analysis.aggregate.sentiment}}">
+                                                <td><p>{{twit[0].text}}</p></td>
+                                                <td><p>{{twit[0].analysis.aggregate.score}}</p></td>
+                                                <td>
+
+                                                    <table class="table table-bordered inner" data-ng-show="twit[0].positive_terms.length != 0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Sentiment</th>
+                                                                <th>Score</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr data-ng-repeat="positiveterm in twit[0].positive_terms">
+                                                                <td><p ng-bind-html="positiveterm.text"></p></td>
+                                                                <td>{{positiveterm.score}}</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </td>
+                                                <td>
+
+                                                    <table class="table table-bordered inner" data-ng-show="twit[0].negative_terms.length != 0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Sentiment</th>
+                                                                <th>Score</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr data-ng-repeat="negativeterm in twit[0].negative_terms">
+                                                                <td><p ng-bind-html="negativeterm.text"></p></td>
+                                                                <td>{{negativeterm.score}}</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+
+                            </td>
+                            <td><button class="btn btn-danger" data-ng-click="removeVendorRow(vend.name)">Remove</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-2">
+                <button class="btn btn-primary" data-ng-click="submitSentimentAnalysis()">
+                    Customer Sentiment
+                </button>
+            </div>
+            <div class="col-sm-2">
+                <button class="btn btn-primary" data-ng-click="submitWordCloud()">
+                    Word Cloud
+                </button>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="loadingdiv" ng-show="loading">
+    <img class="ajax-loader" src="app/images/ajax-loader.gif" />
+</div>

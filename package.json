@@ -1,0 +1,18 @@
+{
+	"name": "vendors-comparison",
+	"description": "import and compare customer feedback sentiment analysis and wordclouds for different vendors",
+	"dependencies": {
+		"twit": "*",
+		"express": "*",
+		"async": "*",
+		"request": "*",
+    "body-parser": "*",
+    "connect-busboy": "*"
+	},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

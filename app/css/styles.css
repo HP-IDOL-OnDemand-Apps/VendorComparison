@@ -1,0 +1,4536 @@
+/****************
+   CSS RESET 
+****************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; 
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #999999;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #009a49;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/****************
+   HEADER
+****************/
+
+header{
+    width: 100%;
+    color: #515965;
+}
+
+#headerAreaContainer{
+    height: 37px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #dbdbdb;
+    width: 100%;
+    min-width: 1300px;
+}
+
+#headerContent{
+    position: relative;
+    width: 1300px;
+    margin: 0 auto;
+    line-height: 45px;
+}
+
+    #headerContent .welcomeArea{
+        float:  right;
+    }
+
+        #headerContent .welcomeArea .separator{
+            float: left;
+        }
+
+        #headerContent .welcomeArea .elmnt{
+            float: left;
+            margin-left: 11px;    
+            margin-right: 8px;
+        }
+
+        #headerContent .welcomeArea .logoutElmnt{
+            margin-right: 0;
+        }
+
+        #headerContent .welcomeArea .notifElmnt{
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        #headerContent .welcomeArea .notification{
+            position: relative;
+            float: left;
+            overflow: hidden;
+            width: 27px;
+            height: 26px;
+            margin-top: 3px;
+        }
+
+a#notificaitonBtn:hover{
+    text-decoration: none;
+}
+
+#headerContent .welcomeArea .notificationIcon{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 19px;
+    height: 19px;
+    background: url(../images/icons.png) no-repeat;
+}
+
+#headerContent .welcomeArea .notificationCount{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    background-color: #fe9015;
+    border: 1px solid #fec17c;
+    font-size: 11px;
+    color: #FFF;
+    text-align: center;
+    line-height: 16px;
+    text-shadow: -1px 0px #fd3d05;
+}
+
+#navAreaContainer{
+    background-color: #FFF;
+    width: 100%;
+    min-width: 1300px;
+}
+
+#navArea{
+    position: relative;
+    width: 1300px;
+    height: 85px;
+    margin: 0 auto;
+}
+
+    #navArea .logo{
+        position: absolute;
+        top: 16px;
+    }
+
+    #navArea h1.title{
+        position: absolute;
+        font-size: 30px;
+        font-weight: normal;
+        left: 114px;
+        top: 41px;
+        color: #009a49;
+    }
+
+#breadCrumbs{
+    position: absolute;
+    left: 413px;
+    top: 54px;
+    padding-bottom: 23px;
+    overflow: hidden;
+}
+
+#breadCrumbs A,
+#breadCrumbs SPAN{
+    float: left;
+    color: #009a49;
+}
+
+#breadCrumbs .separator{
+    float: left;
+    width: 4px;
+    height: 6px;
+    background: url(../images/icons.png) no-repeat;
+    background-position: 0 -19px;
+    margin: 5px 9px 0 11px;
+}
+
+#notificationsPopup{
+    position: absolute;
+    right: 34px;
+    top: 41px;
+    width: 371px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    padding-bottom: 7px;
+    background-color: #FFF;
+    z-index: 1000;
+    box-shadow: 0px 0px 5px #dddddd;
+}
+
+#notificationsInner{
+    padding-left: 10px;
+    padding-right: 11px;
+}
+
+    #notificationsInner h3.notificationsTitle{
+        font-size: 13px;
+        color: #515965;
+        font-weight: bold;
+        border-bottom: 1px solid #d9d9d9;
+        line-height: 12px;
+        padding-top: 13px;
+        padding-bottom: 7px;
+    }
+
+    #notificationsInner h4.notifsNbr{
+        font-size: 13px;
+        color: #515965;
+        font-weight: bold;
+        line-height: 11px;
+        margin-top: 10px;
+        margin-bottom: 12px;
+    }
+
+    #notificationsInner li{
+        overflow: hidden;
+        line-height: 15px;
+        margin: 6px 0 7px 0;
+        font-size: 13px;
+        margin-left: 7px;
+    }
+
+        #notificationsInner li i.dot {
+            float: left;
+            width: 7px;
+            height: 7px;
+            background: url(../images/icons.png) no-repeat -50px -47px;
+            margin-top: 4px;
+            margin-right: 3px;
+        }
+
+        #notificationsInner li .col1{
+            float: left;
+            width: 80px;
+        }
+
+        #notificationsInner li .col2{
+            float: left;
+            padding-left: 5px;
+            width: 83px;
+        }
+
+        #notificationsInner li .col3{
+            float: left;
+            padding-left: 5px;
+            width: 140px;
+        }
+
+#notificationsInner .notficationArrow{
+    position: absolute;
+    top: -40px;
+    right: 26px;
+    width: 34px;
+    height: 39px;
+    border-left: 1px solid #cfcfcf;
+    border-right: 1px solid #cfcfcf;
+    border-top: 1px solid #cfcfcf;
+    background-color: #FFF;
+    box-shadow: 0px -2px 5px #dddddd;
+}
+
+    .notficationArrow .notificationIcon{
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        left: 7px;
+        top: 7px;
+        background: url(../images/icons.png) no-repeat;
+    }
+
+/****************
+   Footer
+****************/
+
+#footerWrapper{
+    width: 100%;
+    min-width: 1300px;
+}
+
+#footer{
+    width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    color: #FFF;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/****************
+   Main Content
+****************/
+
+#mainContentWrapper{
+    background-color: #FFF;
+    width: 100%;
+    min-width: 1300px;
+    min-height: 700px;
+    padding-top: 9px;
+    padding-bottom: 200px;
+}
+
+#mainContent{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+h1.pageTitle {
+    font-weight: normal;
+    font-size: 24px;
+    color: #009a49;
+    margin-bottom: 24px;
+}
+
+/* Panel */
+.panel .caption{ /* captionStyle2 is like the caption in projects-admin.html */
+    height: 52px;
+    border: 1px solid #d0d0d0;  
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.panel .captionInner{
+    height: 51px;
+    background: url(../images/caption1_bg.png) repeat-x top;
+    padding-right: 13px;
+}
+
+.panel .captionInner h3.title{
+    float: left;
+    font-size: 14px;
+    font-weight: normal;
+    color: #009a49;
+    margin-left: 10px;   
+    margin-top: 18px;
+    text-shadow: 0px 1px #efefef;
+}
+
+.panel .captionInner .buttonsArea{
+    position: relative;
+    float:  right;
+    padding-top: 11px;
+}
+
+    .captionInner .buttonsArea .editProjectInfoBtn{
+        position: absolute;
+        top: 2px;
+        right: 40px;
+        width: 150px;
+        text-align: center;
+    }
+
+.panelContent{
+    border-left: 1px solid #d5d5d5;
+    border-right: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.panelContentInner{
+    padding-left: 20px;
+    padding-right: 14px;
+    padding-top: 17px;
+}
+
+    .panelContentInner .message{
+        color: #515965;
+        padding-bottom: 100px;
+        font-size: 14px;
+    }
+
+        .panelContentInner .message P{
+            margin: 3px 0;
+        }
+
+    .panelContentInner .colsContainer{
+        overflow: hidden;
+    }
+
+    .panelContentInner .form .row{
+        margin-bottom: 21px;
+    }
+
+    .panelContentInner .form .lastRow{
+        margin-bottom: 0;
+    }
+
+    .panelContentInner .form .filterCol1{
+        float: left;
+        width: 318px;
+        border-right: 1px solid #dcdcdc;
+    }
+
+    .panelContentInner .form .filterTwoCols1{
+        float: left;
+        width: 418px;
+        border-right: 1px solid #dcdcdc;
+    }
+
+    .panelContentInner .form .filterCol2{
+        float: left;
+        width: 320px;
+        border-right: 1px solid #dcdcdc;
+        padding-left: 24px;
+    }
+
+    .panelContentInner .form .filterTwoCols2{
+        float: left;
+        width: 420px;
+        padding-left: 24px;
+    }
+
+    .panelContentInner .form .filterCol3{
+        float: left;
+        width: 200px;
+        padding-left: 27px;
+    }
+
+    .panelContentInner .form .filterThreeCols1{
+        float: left;
+        width: 300px;
+    }
+
+        .panelContentInner .form .filterThreeCols1 input.text{
+            width: 250px;
+        }
+
+    .panelContentInner .form .filterThreeCols2{
+        float: left;
+        width: 300px;
+    }
+
+        .panelContentInner .form .filterThreeCols2 input.text{
+            width: 250px;
+        }
+
+    .panelContentInner .form .filterThreeCols3{
+        float: left;
+        width: 300px;
+    }
+
+        .panelContentInner .form .filterThreeCols3 input.text{
+            width: 250px;
+        }
+
+    .panelContentInner .form label{
+        display: block;
+        color: #515965;
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 6px;
+    }
+
+    .panelContentInner .form input.text{
+        width: 294px;
+    }
+
+.form .filterTwoCols1 input.text,
+.form .filterTwoCols2 select.combobox{
+    width: 394px;
+}
+
+.panelContentInner .form .cbRow{
+    overflow: hidden;
+    display: block;
+    padding-bottom: 17px;
+}
+
+.panelContentInner .form h4.subFormTitle{
+    color: #515965;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.panelContentInner .form .formButtonsArea{
+    overflow: hidden;
+    border-top: 1px solid #cdcdcd;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    margin-top: 6px;
+    
+}
+
+/* panel - default style */
+.defaultPanel .caption{
+    cursor: pointer;
+    height: 36px;
+    border: 1px solid #b9b9b9;
+}
+
+.defaultPanel .captionInner{
+    height: 35px;
+    background: url(../images/caption_default_bg.png) repeat-x top;
+    padding-right: 9px;
+}
+
+.defaultPanel h3.title{
+    font-size: 18px !important;
+    margin-top: 8px !important;
+    margin-left: 18px !important;
+}
+
+.defaultPanel .expandCollapseBtn{
+    margin-top: 1px;
+}
+
+/* panel - second style like the panel in projects-admin.html */
+.panelStyle2 .caption{
+    height: 52px;
+    border: 1px solid #d0d0d0;  
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.panelStyle2 .captionInner{
+    height: 51px;
+    background: url(../images/caption1_bg.png) repeat-x top;
+    padding-right: 13px;
+}
+
+    .panelStyle2 .captionInner h3.title{
+        float: left;
+        font-size: 14px !important;
+        font-weight: normal;
+        color: #009a49;
+        margin-left: 10px !important;   
+        margin-top: 18px !important;
+        text-shadow: 0px 1px #efefef;
+    }
+
+
+.formButtonsArea a.btn{
+    float: right;
+    cursor: pointer;
+}
+
+/* form - default style */
+.defaultFormInner{
+    overflow: hidden;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+
+.defaultFormViewInfos{
+    padding-left: 19px;
+    padding-top: 7px;
+}
+
+.defaultForm .row{
+   overflow: hidden;
+   padding: 3px 0;
+}
+
+.lastRow{
+    padding-bottom: 5px !important;
+}
+
+.defaultFormViewInfos .row{
+    padding: 3px 0 12px 0;
+}
+
+.defaultForm .dblDote,
+.defaultForm label{
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    color: #515965;
+    margin-top: 8px;
+}
+
+.defaultForm label.fixedWidth{
+    width: 186px;
+}
+
+.twoColsCol1{
+    float: left;
+    width: 510px;
+}
+
+.twoColsCol2{
+    float: left;
+    width: 410px;
+}
+
+.defaultForm input.text{
+    float: left;
+    width: 274px;
+    margin-left: 9px;
+}
+
+.defaultForm .ui-selectmenu-button {
+    margin-left: 9px;
+}
+
+.defaultForm select{
+    width: 276px;
+}
+
+.defaultForm .datepicker{
+    width: 124px !important;
+}
+
+.defaultForm .datepickerWidth{
+    width: 124px !important;
+}
+
+.defaultForm select.datepickerWidth{
+    width: 126px !important;
+}
+
+.defaultForm label.radio{
+    margin-left: 10px;
+}
+
+.defaultForm .contentText{
+    float: left;
+    font-size: 14px;
+    color: #515965;
+    margin-top: 7px;
+    margin-left: 24px;
+}
+
+.formButtons{
+    padding-top: 13px;
+    overflow: hidden;
+}
+
+    .formButtons a.cancelBtn{
+        float: left;
+        margin-left: 19px;
+        padding-left: 22px;
+        padding-right: 21px;
+    }
+
+    .formButtons a.submitBtn{
+        float: right;
+        margin-right: 15px;
+        padding-left: 22px;
+        padding-right: 21px;
+    }
+
+    .formButtons a.finishBtn{
+        float: right;
+        margin-right: 15px;
+        padding-left: 13px;
+        padding-right: 20px;
+    }
+
+/* Data export buttons area */
+
+.moreFunctionsButtonsArea{
+    overflow:  hidden;
+    padding: 5px 0;
+}
+
+    .moreFunctionsButtonsArea .buttonsArea{
+        float: left;
+        padding-right: 11px;
+        border-right: 1px solid #e2e2e2;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .moreFunctionsButtonsArea .beginning{
+        margin-top: 3px;
+        margin-left: 20px;
+        color: #515965;
+    }
+
+        .moreFunctionsButtonsArea .buttonsArea .checkbox{
+            margin-top: 8px;
+            margin-left: 9px;
+        }
+        .moreFunctionsButtonsArea .buttonsArea .cbText{
+            color: #009a49;
+            margin-top: 8px;
+        }
+
+        .moreFunctionsButtonsArea .buttonsAreaWeeklyUpdate{
+            padding-top: 3px;
+        }
+
+        .moreFunctionsButtonsArea .buttonsAreaWeeklyUpdate label.text{
+            color: #515965;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+.buttonsAreaWeeklyUpdate .altWbs{
+    text-align: center;
+    text-indent: 0;
+}
+
+.moreFunctionsButtonsArea .labelSchedule{
+    font-size: 13px;
+    font-weight: bold;
+    color: #515965;
+    display: block;
+    margin-bottom: 11px;
+}
+
+.moreFunctionsButtonsArea  .scheduleCol{
+    padding-left: 11px;
+    margin-top: 15px;
+}
+
+.moreFunctionsButtonsArea .comboboxSchedule{
+    width: 124px;
+}
+
+.moreFunctionsButtonsArea .scheduleCheckboxArea{
+    overflow: hidden;
+    padding-top: 2px;
+    width: 678px;
+}
+
+	.scheduleCheckboxArea .cbCumulativeByHours{
+		margin-left: 50px !important;
+	}
+		
+
+.moreFunctionsButtonsArea .columnsSchedule{
+    font-weight: bold;
+    color: #515965;
+}
+
+.moreFunctionsButtonsArea .forecastCb{
+    margin-right: 17px;
+}
+
+.moreFunctionsButtonsArea .graphIco{
+    margin-right: 9px;
+}
+
+.moreFunctionsButtonsArea .graphButtonsContainer{
+    overflow: hidden;
+    padding-top: 27px;
+}
+
+/* Form inputs */
+
+input.text{
+    border: 1px solid #009a49;
+    height: 27px;
+    border-radius: 3px;
+    color: #515965;
+    font-size: 12px;
+    text-indent: 10px;
+    box-shadow: 2px 2px 2px #eaeaea inset;   
+	line-height: 1;
+	display:inline-block;
+	  font-family: Arial;
+}
+
+input.text:focus{
+    outline: none;
+}
+
+input.materialCat{
+    width: 742px;
+    color: #333333;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input.materialSubCat{
+    width: 722px;
+    font-size: 13px;
+    font-style: italic;
+    margin-right: 5px;
+}
+
+input.materialSubSubCat{
+    width: 694px;
+    font-size: 13px;
+    font-style: italic;
+    margin-right: 5px;
+}
+
+input.equipmentCat{
+    width: 520px;
+    color: #333333;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+input.equipmentSubCat{
+    width: 500px;
+    color: #333333;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+input.equipmentSubSubCat{
+    width: 294px;
+    color: #333333;
+    font-size: 13px;
+    font-style: italic;
+    margin-right: 15px;
+}
+
+input.altWbs{
+    width: 61px;
+    font-size: 13px;
+    color: #333333;
+}
+
+input.baseline{
+    width: 59px;
+    color: #333333;
+    text-align: center;
+    text-indent: 0;
+    font-size: 13px;
+}
+
+input.tag{
+    width: 59px;
+    color: #333333;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 13px;
+}
+
+input.error{
+    border: 1px solid #ff0000;
+}
+
+.errorInfo{
+    float: left;
+    background-color: #ffe5e5;
+    color: #b50000;
+    height: 27px;
+    border: 1px solid #b50000;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 27px;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+input.datepicker{
+    background: url(../images/datepicker_ico.png) no-repeat 98px -10px;
+}
+
+.ui-selectmenu-button{
+    border: 1px solid #009a49;
+    background: none;
+    box-shadow: 2px 2px 2px #eaeaea inset;
+    height: 29px;
+}
+
+.ui-corner-all{
+    border-radius: 3px;
+}
+
+.ui-selectmenu-button .ui-icon-triangle-1-s{
+    background: url(../images/icons.png) -64px -50px;
+    width: 7px;
+    height: 4px;
+    margin-top: -2px !important;
+}
+
+.ui-selectmenu-button .ui-selectmenu-text{
+    font-size: 12px;
+    color: #515965;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin-top: 3px;
+}
+
+.ui-selectmenu-menu{
+    border: 1px solid #009a49;
+    border-radius: 3px;
+    background-color: #FFF;
+    background-image: none;
+    box-shadow: 0 5px 10px #2f2f2f;
+    padding-left: 6px;
+    padding-right: 9px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    z-index: 10000;
+}
+
+.ui-selectmenu-menu UL {
+    background-image: none;
+    background-color: #FFF;
+    border: none;
+    border-radius: 0px;
+}
+
+.ui-menu-item{
+    font-size: 12px;
+    color: #515965;
+}
+
+.ui-selectmenu-menu .ui-state-focus{
+    background-color: #bde5d0;
+    background-image: none;
+    border: 1px solid transparent;
+    color: #515965;
+    font-weight: normal;
+    border-radius: 0px;
+}
+
+/* autocomplete combobox */
+
+.custom-combobox-input{
+    border: 1px solid #009a49;
+    height: 27px;
+    border-radius: 3px;
+    color: #515965;
+    font-size: 12px;
+    text-indent: 10px;
+    box-shadow: 2px 2px 2px #eaeaea inset;   
+    background-color: #FFF;
+    font-weight: normal;
+    width: 274px;
+    margin-left: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.custom-combobox{
+    position: relative;
+}
+
+    .custom-combobox a.ui-button {
+        position: relative;
+        right: 38px;
+        height: 27px;
+        background: none;
+        border: none;
+    }
+
+        .custom-combobox a.ui-button .ui-icon-triangle-1-s{
+            background: url(../images/icons.png) -64px -50px;
+            width: 7px;
+            height: 4px;
+            margin-top: -2px;
+            margin-left: 0;
+        }
+
+.ui-autocomplete{
+    border: 1px solid #009a49;
+    border-radius: 3px;
+    background-color: #FFF;
+    background-image: none;
+    box-shadow: 0 5px 10px #2f2f2f;
+    padding-left: 6px;
+    padding-right: 9px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    z-index: 10000;
+}
+
+    .ui-autocomplete UL {
+        background-image: none;
+        background-color: #FFF;
+        border: none;
+        border-radius: 0px;
+    }
+
+    .ui-autocomplete .ui-menu-item{
+        font-size: 12px;
+        color: #515965;
+    }
+
+    .ui-autocomplete .ui-state-focus{
+        background-color: #bde5d0;
+        background-image: none;
+        border: 1px solid transparent;
+        color: #515965;
+        font-weight: normal;
+        border-radius: 0px;
+    }
+
+/* Datepicker */
+
+.ui-datepicker{
+    border: 4px solid #33b659;
+    border-radius: 0;
+    padding: 0;
+    width: 224px;
+}
+
+.ui-datepicker-header{
+    background-image: none;
+    background-color: #e7e7e7;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #008550;
+    border-radius: 0;
+    margin: 0;
+    padding: 0 !important;
+    height: 30px !important;
+    color: #515965;
+}
+
+.ui-datepicker-header .ui-datepicker-prev,
+.ui-datepicker-header .ui-datepicker-next{
+    cursor: pointer;
+    background-color: #33b659;
+    border: 1px solid #009a49;
+    width: 20px !important;
+    height: 19px !important;
+    margin-top: 2px;
+}
+
+.ui-datepicker-header .ui-datepicker-prev{
+     margin-left: 6px;
+}
+.ui-datepicker-header .ui-datepicker-next{
+     margin-right: 6px;
+}
+
+.ui-datepicker-header .ui-datepicker-prev:hover, 
+.ui-datepicker-header .ui-datepicker-next:hover{
+    background-color: #009a49 !important;
+    background-image: none;
+}
+
+.ui-datepicker-header .ui-icon-circle-triangle-w{
+    background: url(../images/icons.png) no-repeat -36px -72px;
+    width: 12px;
+    height: 9px;
+    margin-top: -5px !important;
+    margin-left: -7px !important;
+}
+
+.ui-datepicker-header .ui-icon-circle-triangle-e{
+    background: url(../images/icons.png) no-repeat -57px -72px;
+    width: 12px;
+    height: 9px;
+    margin-top: -5px !important;
+    margin-left: -7px !important;
+}
+
+table.ui-datepicker-calendar {
+    border-spacing: 0;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+}
+
+.ui-datepicker-calendar th{
+    font-size: 11px;
+    color: #8e8d8d;
+    padding: 0;
+    background-color: #f5f5f5 !important;
+    background-image: none;
+    padding-top: 7px;
+    border: 1px solid #dddddd;
+    height: 16px;
+    width: 31px;
+}
+
+.ui-datepicker-calendar td{
+    border: 1px solid #dddddd;
+    height: 19px;
+    background-color: #ffffff;
+}
+
+.ui-datepicker-calendar .ui-state-default{
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    padding: 0;
+    text-align: center;
+    font-size: 11px;
+    color: #676767;
+    font-weight: normal;
+    width: 100%;
+    padding-top: 5px;
+    height: 16px;
+}
+
+.ui-datepicker-calendar .ui-datepicker-today .ui-state-default{
+    color: #000;
+    font-weight: bold;
+}
+
+.ui-datepicker-calendar td:hover .ui-state-default{
+    background-color: #33b659;
+    color: #FFF;
+}
+
+.ui-datepicker-calendar .ui-datepicker-other-month{
+    background-color: #fff !important;
+}
+
+.ui-datepicker-month{
+    border-radius: 3px;
+    border: 1px solid #009a49;
+    background-color: #FFF;
+    font-size: 11px !important;
+    color: #515965 !important; 
+    width: 60px !important; 
+    height: 19px !important;
+}
+
+.ui-datepicker-year{
+    border-radius: 3px;
+    border: 1px solid #009a49;
+    background-color: #FFF;
+    font-size: 11px !important;
+    color: #515965 !important; 
+    width: 63px !important; 
+    height: 19px !important;
+}
+
+/* Table */
+
+.tableContainer{
+    margin-top: 1px;    
+    overflow: hidden;
+}
+
+.tableDefault{ 
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    .tableDefault th{
+        border-top: 1px solid #e9e9e9;
+        border-bottom: 1px solid #e9e9e9;
+        border-left: 1px solid #d8d8d8;
+        border-right: 1px solid #d8d8d8;
+    }
+
+    .tablesorter th{
+        cursor: pointer;
+    }
+
+#projectsTable th.col1{
+    width: 118px;
+}
+
+#projectsTable th.col2{
+    width: 410px;
+}
+
+#projectsTable th.col3{
+    width: 330px;
+}
+
+#projectsTable th.col4{
+    width: 200px;
+}
+
+#projectsTable th.col5{
+    width: 110px;
+}
+
+#projectsTable td.col1{
+    width: 119px;
+}
+
+#projectsTable td.col2{
+    width: 410px;
+}
+
+#projectsTable td.col3{
+    width: 330px;
+}
+
+#projectsTable td.col4{
+    width: 200px;
+}
+
+#projectsTable td.col5{
+    width: 110px;
+}
+
+#materialsTable .custom-combobox-input{
+    width: 70px;
+}
+
+#materialsTable .col1{
+    width: 109px;
+}
+
+#materialsTable th.col2{
+    width: 60px;
+}
+
+#materialsTable td.col2{
+    width: 60px;
+    text-align: left;
+    text-indent: 10px;
+}
+
+#materialsTable .col3{
+    width: 753px;
+}
+
+#materialsTable .col4{
+    width: 183px;
+}
+
+#materialsTable .col5{
+    width: 183px;
+}
+
+#materialsTable .scrollable{
+    height: 610px;
+}
+
+.tableDefault th.first{
+    padding-left: 1px;
+}
+
+.tableDefault th.last{
+    padding-right: 1px;
+}
+
+.tableDefault th span.tbHeader{
+    position: relative;
+    display: block;
+    padding: 0;
+    height: 46px;
+    background: url(../images/table_default_th_bg.png) repeat-x top;
+    font-size: 13px;
+    font-weight: bold;
+    color: #009a49;
+    text-shadow: 0 1px #f2f2f2;
+    line-height: 39px;
+}
+
+.tableStyle2 th span.tbHeader{
+    background: url(../images/table_style2_th_bg.png) repeat-x top;
+    height: 65px;
+    line-height: normal;
+    padding-top: 48px;
+}
+
+.tableStyle3 th span.tbHeader{
+	line-height: normal;
+	background: url(../images/table_style2_th_bg.png) repeat-x top;
+	padding-top: 15px;
+	height: 50px;
+}
+
+.tableStyle4 th span.tbHeader{
+	line-height: normal;
+	background: url(../images/table_style2_th_bg.png) repeat-x top;
+	padding-top: 15px;
+	height: 30px;
+}
+
+.tableDefault td{
+    border: 1px solid #e7e7e7;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    line-height: 47px;
+}
+
+.tableDefault tr:nth-child(even){
+  background-color: #f9f9f9;  
+}
+
+table tr.even,
+.tableDefault tr.even{
+  background-color: #f9f9f9 !important;  
+}
+
+.blankRow{
+    height: 15px !important;
+    border-bottom: 1px solid #636363 !important;
+    padding-top:0px!important;
+    padding-bottom:0px!important;
+}
+
+.noZebra tr:nth-child(even){
+    background-color: #FFF;
+}
+
+
+.tableDefault .sortArrow{
+    position: absolute;
+    left: 49%;
+    top: 29px;
+    width: 10px;
+    height: 6px;
+    background: url(../images/icons.png) no-repeat 0 -75px;
+}
+
+.tableDefault .scrollable{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.tableDefault tr.firstRow td{
+    border-top: none;
+}
+
+.tableDefault tr.lastRow td{
+    /*border-bottom: none;*/
+}
+
+.tableDefault td.first{
+    border-left: none;
+}
+
+.tableDefault td.last{
+    border-right: none;
+}
+
+.headerSortDown .sortArrow{
+    background: url(../images/icons.png) no-repeat -13px -75px;
+}
+
+#projectPermissionTable a.deleteProjectIco{
+    left: 47%;
+}
+
+#projectPermissionTable .scrollable{
+    max-height: 480px;
+}
+
+#projectPermissionTable th.col1{
+    width: 350px;
+}
+
+#projectPermissionTable td.col1{
+    width: 350px;
+}
+
+#projectPermissionTable th.col2{
+    width: 350px;
+}
+
+#projectPermissionTable td.col2{
+    width: 350px;
+}
+
+.iconsArea{
+    position: relative;
+}
+
+.iconsArea a.editIco{
+    position: absolute;
+    left: 7px;
+    top: 14px;
+}
+
+.superintendent .iconsArea a.editIco{
+    left: 47px;
+}
+
+.superintendent-equipment .iconsArea a.editIco{
+    left: 32px!important;
+}
+
+.superintendent-remarks .iconsArea a.editIco{
+    left: 32px!important;
+}
+
+.iconsArea a.userPermissionsIco{
+    position: absolute;
+    left: 47px;
+    top: 14px;
+    
+}
+
+.iconsArea a.deleteProjectIco{
+    position: absolute;
+    left: 85px;
+    top: 16px;
+}
+
+#scheduleListTable .col1{
+    width: 480px;
+}
+
+#scheduleListTable .col2{
+    width: 150px;
+}
+
+#scheduleListTable .col3{
+    width: 480px;
+}
+
+#tasksTable{
+    float: left;
+    width: 931px;
+}
+
+    #tasksTable .col1{
+        width: 108px;
+    }
+
+    #tasksTable .col2{
+        width: 60px;
+    }
+
+    #tasksTable td.col2{
+        text-align: left;
+        text-indent: 14px;
+    }
+
+    #tasksTable .col3{
+        width: 69px;
+    }
+
+    #tasksTable .col4{
+        width: 184px;
+    }
+
+    #tasksTable .col5{
+        width: 70px;
+    }
+
+    #tasksTable .col6{
+        width: 87px;
+    }
+
+    #tasksTable .col7{
+        width: 87px;
+    }
+
+#tasksTable .scrollable{
+    height: 350px;
+    overflow: hidden;
+}
+
+.tableDefault input.taskDesc{
+    width: 174px;
+    font-weight: bold;
+    color: #333333;
+    font-size: 13px;
+}
+
+.tableDefault input.subTask{
+    width: 152px;
+    margin-right: 5px;
+    font-style: italic;
+    color: #333333;
+    font-size: 13px;
+}
+
+.tableDefault input.subSubTask{
+    width: 134px;
+    margin-right: 5px;
+    font-style: normal;
+    color: #333333;
+    font-size: 13px;
+}
+
+.tableDefault input.baseline{
+    width: 59px;
+    color: #333333;
+    text-align: center;
+    text-indent: 0;   
+    
+}
+
+.tableDefault input.startdate{
+    width: 76px;
+    background-position: 50px -10px;
+    text-indent: 7px;
+}
+
+.tableDefault input.enddate{
+    width: 76px;
+    background-position: 50px -10px;
+    text-indent: 7px;
+}
+
+.actionsButtonsContainer{
+    position: relative;
+    height: 31px;
+}
+
+.tasksTableRightContainer{
+    position: relative;
+    float: left;
+    width: 367px;
+    background: url(../images/table_style2_th_bg.png) repeat-x top;
+}
+
+#tasksTableRight{
+    float: left;
+    width: 367px;
+}
+
+    #tasksTableRight tr{
+        background-color: transparent;
+    }
+
+    #tasksTableRight th{
+        font-size: 13px;
+        color: #009a49;
+        text-shadow: 1px 0 #fafafa;
+        font-weight: bold;
+    }
+
+    #tasksTableRight .topRow th{
+        padding-top: 14px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #d1d1d1;
+        border-left: none;
+        border-right: none;
+    }
+
+    #tasksTableRight .middleRow th{
+        padding-top: 6px; 
+        padding-bottom: 4px;
+        line-height: 12px;
+    }
+
+    #tasksTableRight .middleRow th.first{
+        border-left: none;
+    }
+
+    #tasksTableRight .middleRow th.last{
+        border-right: none;
+    }
+
+    #tasksTableRight .bottomRow th{
+        padding-top: 3px;
+        padding-bottom: 5px;
+        line-height: normal;
+        border-color: #c9c9c9;
+    }
+
+    #tasksTableRight .bottomRow input.text{
+        width: 41px;
+        color: #009a49;
+        text-align: center;
+        text-indent: 0;
+    }
+
+    #tasksTableRight th .thDate{
+        float: left;
+        font-size: 11px;
+        font-weight: normal;
+        width: 75px !important;
+        height: 10px;
+    }
+
+    #tasksTableRight .weeksBg{
+        background-color: #8f8f8f;
+        box-shadow: 5px 5px 5px #6c6c6c inset;
+    }
+
+    #tasksTableRight .weeksBg input.text{
+        width: 41px;
+        text-align: center;
+        text-indent: 0;
+    }
+
+    #tasksTableRight .weeksBg td{
+        width: 55px;
+		height: 50px; /* for firefox height is 30px - please see js code */
+    }
+
+    #tasksTableRight .scrollableXY{
+        overflow-x: auto;
+        width: 367px;
+    }
+
+    #tasksTableRight .verticalScrollbar {
+        overflow-y: hidden;
+        height: 352px;
+    }
+
+#tasksVisibleScrollbar{
+    position: absolute;
+    right: 0;
+    top: 113px;
+    height: 352px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#tasksVisibleScrollbarInner{
+    height: 570px;
+    width: 22px;
+}
+
+#baselineWeeklyContentTable{
+  width: 1345px;
+}
+
+#baselineWeeklyContentTable td{
+    border: 1px solid transparent;
+}
+
+#equipmentTable .scrollable{
+    height: 580px;
+}
+
+#equipmentTable .col1{
+    width: 109px;
+}
+
+#equipmentTable .col2{
+    width: 95px;
+}
+
+#equipmentTable .col3{
+    width: 579px;
+}
+
+#equipmentTable .col4{
+    width: 93px;
+}
+
+#equipmentTable .col5{
+    width: 103px;
+}
+
+#equipmentTable .equipActionBtn{
+    left: 41px;
+}
+
+#WeeklyUpdateScheduleTable .col1{
+    width: 66px;
+}
+
+#WeeklyUpdateScheduleTable td{
+    position: relative;
+}
+
+    #WeeklyUpdateScheduleTable .collapseTree{
+       top: 18px !important;
+    }
+
+    #WeeklyUpdateScheduleTable .subTitleLastTree{
+        top: 1px !important;
+    }
+
+
+
+    #WeeklyUpdateScheduleTable .nbr1 {
+        margin-left: 15px !important;
+    }
+
+    #WeeklyUpdateScheduleTable .nbr2 {
+        margin-left: 15px !important;
+    }
+
+    #WeeklyUpdateScheduleTable .subSubTitle2 .nbr2{
+        margin-left: 65px !important;
+    }
+
+    #WeeklyUpdateScheduleTable .subSubTitle2 .nbr3{
+        margin-left: 65px !important;
+    }
+
+    #WeeklyUpdateScheduleTable .subSubTitle2 .collapseTree{
+        top: 0 !important;
+    }
+
+    #WeeklyUpdateScheduleTable .subSubTitle2 .subTitleLastTree{
+        left: 60px !important;
+    }
+
+    #WeeklyUpdateScheduleTable .subSubTitle2 .verticalTreeBar1{
+        left: 60px !important;
+    }
+
+    #WeeklyUpdateScheduleTable .longBar .verticalTreeBar1 {
+        top: -145px !important; 
+        height: 200px;
+    }
+
+    #WeeklyUpdateScheduleTable .verticalTreeBar1{
+        top: 10px !important; 
+    }
+
+    #WeeklyUpdateScheduleTable .title{
+        cursor: pointer;  
+    }
+
+#WeeklyUpdateScheduleTable td.col1{    
+    text-align: left;
+    text-indent: 10px;
+}
+
+#WeeklyUpdateScheduleTable{
+    table-layout: fixed;
+}
+
+#WeeklyUpdateScheduleTable .col2{
+    width: 420px;
+}
+
+#WeeklyUpdateScheduleTable td.col2{
+    text-align: left;
+    text-indent: 10px;
+}
+
+#WeeklyUpdateScheduleTable .col3{
+    width: 86px;
+}
+
+#WeeklyUpdateScheduleTable .col4{
+    width: 86px;
+}
+
+#WeeklyUpdateScheduleTable .col5{
+    width: 86px;
+}
+
+#WeeklyUpdateScheduleTable .col6{
+    width: 100px;
+}
+
+#WeeklyUpdateScheduleTable .col7{
+    width: 106px;
+}
+
+#WeeklyUpdateScheduleTable .col8{
+    width: 90px;
+}
+
+#WeeklyUpdateScheduleTable .col9{
+    width: 100px;
+}
+
+#WeeklyUpdateScheduleTable  .columnSeparator{
+    width: 5px;
+    border-bottom: none !important;
+    border-top: none !important;
+}
+
+
+
+#WeeklyUpdateScheduleTable td{
+    line-height: normal;
+    height: 50px;
+    vertical-align: middle;
+}
+
+#WeeklyUpdateScheduleTable .altWbs{
+    text-align: center;
+    text-indent: 0;
+}
+
+#WeeklyUpdateScheduleTable .scrollable{
+    max-height: 715px;
+}
+
+#WeeklyUpdateMaterialTable{
+	table-layout:fixed;
+}
+
+#WeeklyUpdateMaterialTable .col1{
+    text-align: left;
+    text-indent: 10px;
+	width: 700px;
+}
+
+#WeeklyUpdateMaterialTable .col2{
+	width: 80px;
+}
+
+#WeeklyUpdateMaterialTable .col3{
+	width: 100px;
+}
+
+#WeeklyUpdateMaterialTable .col4{
+	width: 70px;
+}
+
+#WeeklyUpdateMaterialTable .col5{
+	width: 100px;
+}
+
+
+
+#WeeklyUpdateMaterialTable .scrollable{
+    height: 818px;
+}
+
+#WeeklyUpdateMaterialTable .altWbs{
+    text-align: center;
+    text-indent: 0;
+    
+}
+
+#WeeklyUpdateEquipmentsTable td{
+    line-height: normal;
+    height: 50px;
+    vertical-align: middle;
+}
+
+
+#WeeklyUpdateEquipmentsTable .col1{
+    width: 100px; 
+}
+
+#WeeklyUpdateEquipmentsTable .col2{
+    width: 320px;
+}
+
+#WeeklyUpdateEquipmentsTable .col3{
+    width: 80px;
+}
+
+#WeeklyUpdateEquipmentsTable .col4{
+    width: 80px;
+}
+
+#WeeklyUpdateEquipmentsTable .col5{
+    width: 90px;
+}
+
+#WeeklyUpdateEquipmentsTable .col6{
+    width: 80px;
+}
+
+#WeeklyUpdateEquipmentsTable .col7{
+   	width: 80px;
+}
+
+#WeeklyUpdateEquipmentsTable .col8{
+    width: 80px;
+}
+
+#WeeklyUpdateEquipmentsTable .col9{
+    width: 80px;
+}
+
+
+#WeeklyUpdateEquipmentsTable .scrollable{
+    height: 480px;
+}
+
+#WeeklyUpdateRemarksTable .equipActionBtn{
+    top: 0;
+    left: 41px;
+}
+
+#WeeklyUpdateRemarksTable .col1{
+    width: 109px;
+    vertical-align: middle;
+}
+
+#WeeklyUpdateRemarksTable .col2{
+    vertical-align: bottom;
+}
+
+#WeeklyUpdateRemarksTable .col2 textarea {
+    width: 800px;
+    height: 58px;
+    margin-top: 15px;
+}
+
+#scheduleSummaryTable1{
+    float: left;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-size: 13px;
+    color: #636363;
+    table-layout: fixed;
+}
+
+    #scheduleSummaryTable1 th{
+        font-size: 13px;
+        font-weight: bold;
+        color: #009a49;
+        text-shadow: 0 1px #efefef;
+        border: 1px solid #c8c8c8;
+        vertical-align: middle;
+    }
+
+    #scheduleSummaryTable1 .maxHeight{
+        height: 113px;
+        vertical-align: middle;
+    }
+
+    #scheduleSummaryTable1 .col1{
+        width: 362px;    
+    }
+
+    #scheduleSummaryTable1 th.col2{
+        width: 140px;
+    }
+
+    #scheduleSummaryTable1 td.col1{
+    }
+
+    #scheduleSummaryTable1 td.col2{
+        text-align: center;
+    }
+
+    #scheduleSummaryTable1 td.col3{
+        text-align: center;
+    }
+
+    #scheduleSummaryTable1 td{
+        height: 48px;
+        vertical-align: middle;
+        border: 1px solid #e7e7e7;
+    }
+
+    #scheduleSummaryTable1 .col22 {
+        width: 58px;
+    }
+
+    #scheduleSummaryTable1 .title{
+        cursor: pointer;
+        font-weight: bold;
+        padding-left: 27px;
+        position: relative;
+    }
+
+#scheduleSummaryTable1Scrolling{
+    max-height: 700px;
+    overflow-y: hidden;
+}
+    #scheduleSummaryTable1Scrolling table{
+        width: 100%;
+    }
+
+#scheduleSummaryVerticalScroll{
+    max-height: 700px;
+    overflow-y: hidden;
+}
+
+#scheduleSummaryVerticalScroll table{
+    table-layout: fixed;
+}
+
+#scheduleSummaryVerticalScroll2{
+    max-height: 700px;
+    overflow-y: hidden;
+}
+
+#scheduleSummaryVerticalScroll2 table{
+    table-layout: fixed;
+}
+
+#oneColumnTableScrolling{
+    max-height: 700px;
+    overflow-y: hidden;
+}
+
+#scheduleSummaryVerticalScrollBar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-height: 700px;
+    width: 20px;
+    overflow-y:  scroll;
+}
+
+
+.workTitle{
+    font-size: 14px !important;
+}
+
+    #scheduleSummaryTable1 .subTitle{
+        position: relative;
+        padding-left: 48px;
+    }
+
+    #scheduleSummaryTable1 .subSubTitle{
+        position: relative;
+        padding-left: 77px;
+    }
+
+    #WeeklyUpdateScheduleTable .collapseTree,
+    #scheduleSummaryTable1 .collapseTree{
+        position: absolute;
+        background: url(../images/icons.png) no-repeat -183px -19px;
+        width: 15px;
+        height: 38px;
+        left: 6px;
+        top: 0; 
+    }
+
+    #WeeklyUpdateScheduleTable .verticalTreeBar1,
+    #scheduleSummaryTable1 .verticalTreeBar1{
+        width: 1px;
+        height: 45px;
+        background-color: #4e4e4e;
+        position: absolute;
+        left: 13px;
+        top: 0;
+    }
+
+    #WeeklyUpdateScheduleTable .subTitleLastTree,
+    #scheduleSummaryTable1 .subTitleLastTree{
+        position: absolute;
+        background: url(../images/icons.png) no-repeat -143px -1px;
+        width: 19px;
+        height: 24px;
+        left: 13px;
+        top: -15px;
+    }
+
+    #WeeklyUpdateScheduleTable .subSubTitle2 .collapseTree,
+    #scheduleSummaryTable1  .subSubTitle .collapseTree{
+        position: absolute;
+        background: url(../images/icons.png) no-repeat -143px 0;
+        width: 55px;
+        height: 57px;
+        left: 13px;
+        top: -18px;
+    }
+
+    #WeeklyUpdateScheduleTable .subSubTitle2 .subTitleLastTree,
+    #scheduleSummaryTable1 .subSubTitle .subTitleLastTree{
+        left: 60px;
+        width: 10px;
+    }
+
+    #WeeklyUpdateScheduleTable .subSubTitle2 .verticalTreeBar1,
+    #scheduleSummaryTable1 .subSubTitle .verticalTreeBar1{
+        left: 60px;
+    }
+
+    #scheduleSummaryTable1 .style1{
+        color: #636363;
+    }
+
+    #scheduleSummaryTable1 .style1{
+        color: #333333;
+    }
+
+    #WeeklyUpdateScheduleTable .nbr1,
+    #scheduleSummaryTable1 .nbr1{
+        float: left;
+        /* width: 10px; */
+    }
+
+    #WeeklyUpdateScheduleTable .nbr2,
+    #scheduleSummaryTable1 .nbr2{
+        float: left;
+        width: 20px;
+    }
+
+    #WeeklyUpdateScheduleTable .nbr3,
+    #scheduleSummaryTable1 .nbr3{
+        float: left;
+        width: 33px;
+    }
+
+    #WeeklyUpdateScheduleTable .desc1,
+    #scheduleSummaryTable1 .desc1{
+        float: left;
+        width: 315px;
+    }
+
+    #WeeklyUpdateScheduleTable .desc2,
+    #scheduleSummaryTable1 .desc2{
+        float: left;
+        width: 290px;
+    }
+
+    #WeeklyUpdateScheduleTable .desc3,
+    #scheduleSummaryTable1 .desc3{
+        float: left;
+        width: 46px;
+    }
+
+    #scheduleSummaryTable1 .root{
+        font-weight: bold;
+    }
+
+    #scheduleSummaryTable1 .mainRow .subSubTitle{
+        cursor: pointer;
+    }
+
+    #scheduleSummaryTable1 .normal{
+        background-color: #ccffcc;
+    }
+
+    #scheduleSummaryTable1 .warning{
+        background-color: #ffffd8;
+    }
+
+    #scheduleSummaryTable1 .alert{
+        background-color: #fcd8d8;
+    }
+
+    #WeeklyUpdateScheduleTable .barChartContainer,
+    #scheduleSummaryTable1 .barChartContainer{
+        width: 40px;
+        height: 6px;
+        background-color: #cbcbcb;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        margin-bottom: 11px;
+    }
+
+    #WeeklyUpdateScheduleTable .barChartContainer .barChart,
+    #scheduleSummaryTable1 .barChartContainer .barChart{
+        background-color: #00833e;
+        height: 6px;
+        width: 0%;
+    }
+
+    #scheduleSummaryTable1 tr.totalRow .col1 > div{
+        padding-left: 10px;
+    }
+
+td.task{
+    font-weight: bold;
+}
+
+td.subtask{
+    text-indent: 30px !important;
+}
+
+td.subsubtask{
+    text-indent: 60px !important;
+}
+
+tr.totalRow{
+    color: #4c4c4c;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #b9b9b9 !important;
+}
+
+tr.totalRow td{
+    background-color: #b9b9b9 !important;
+}
+
+.tableHeader{
+    background: url(../images/table_style2_th_bg.png) repeat-x top;
+}
+
+.scheduleSummaryTable2Container{
+    float: left;
+    width: 935px;
+    overflow-x: auto;
+}
+
+.scheduleSummaryPage .scheduleSummaryTable2Container{
+    width: 735px!important;
+}
+
+.scheduleSummaryTable2{
+    width: 1300px;
+    table-layout: fixed;
+}
+
+    .scheduleSummaryTable2 th{
+        border: 1px solid #c8c8c8;
+        font-size: 13px;
+        font-weight: bold;
+        color: #009a49;
+        text-shadow: 0 1px #e8e8e8;
+        vertical-align: middle;
+    }
+
+    .scheduleSummaryTable2 .hRow1{
+        height: 38px;
+    }
+
+    .scheduleSummaryTable2 .hRow2{
+        height: 34px;
+    }
+
+    .scheduleSummaryTable2 .hRow3{
+        height: 39px;
+    }
+
+    .scheduleSummaryTable2 .first{
+        border-left: none;
+    }
+
+    .scheduleSummaryTable2 td{
+        text-align: center;
+        font-size: 13px;
+        color: #636363;
+        vertical-align: middle;
+        border: 1px solid #e7e7e7;
+        width: 80px;
+    }
+
+    .scheduleSummaryTable2 td.normalHeight{
+        height: 48px;
+    }
+
+    .scheduleSummaryTable2 td.alert{
+        background-color: #fcd8d8;
+    }
+
+    .scheduleSummaryTable2 td.normal{
+        background-color: #ccffcc;
+    }
+
+    .scheduleSummaryTable2 td.warning{
+        background-color: #ffffd8;
+    }
+
+    .scheduleSummaryTable2 td.weekLegend{
+        background-color: #ffe59e !important;
+    }
+
+    .scheduleSummaryTable2 td.forceNormal{
+        background-color: #ccffcc !important;
+    }
+
+    .scheduleSummaryTable2 td.forceWarning{
+        background-color: #ffffd8 !important;
+    }
+
+    .scheduleSummaryTable2 tr.totalRow td.weekLegend{
+        border-left: 1px solid #757575 !important;
+        border-right: 1px solid #757575 !important;
+    }
+
+    .scheduleSummaryTable2 td.root{
+        font-weight: bold;
+    }
+
+    .scheduleSummaryTable2 .rightBorder{
+        border-right: 1px solid #757575 !important;
+    }
+
+    .scheduleSummaryTable2 .col1{
+        width: 87px !important;
+    }
+
+    .scheduleSummaryTable2 .col2{
+        width: 82px !important;
+    }
+
+    .scheduleSummaryTable2 .col3{
+        width: 87px !important;
+    }
+
+#productivityTableLeftContainer{
+    float: left;
+    width: 305px;
+}
+
+.productivityArea{
+    margin-top: 13px;
+}
+
+table#productivityTableLeft{
+    width: 100%;
+}
+
+tr.productivityRows td,
+table#productivityTableLeft td{
+    background-color: #b7ebff;
+    border: 1px solid #cbcbcb !important;
+    font-size: 13px;
+    color: #636363;
+    font-weight: bold;
+    height: 37px !important;
+    vertical-align: middle;
+    text-indent: 7px;
+    border-left: 1px solid #636363;
+    height: 20px!important;
+}
+
+tr.productivityRows.title td,
+table#productivityTableLeft .title td{
+    font-size: 14px;
+    border-right: 1px solid #b7ebff;
+}
+
+tr.productivityRows.firstRow td,
+table#productivityTableLeft tr.firstRow td{
+    border-top: 1px solid #636363 !important;
+}
+
+tr.productivityRows.lastRow td{
+    border-bottom: 1px solid #636363 !important;
+}
+
+tr.productivityRows td.firstCol{
+    border-left: 1px solid #636363 !important;
+}
+
+table#productivityTableMiddle{
+    width: 1300px;
+}
+
+table#productivityTableMiddle .borderRightColor {
+    border-right: 1px solid #b7ebff;
+}
+
+table#productivityTableMiddle tr.firstRow td{
+    border-top: 1px solid #636363;
+}
+
+table#productivityTableMiddle tr.lastRow td{
+    border-bottom: 1px solid #636363;
+}
+
+table#productivityTableMiddle td{
+    background-color: #b7ebff;
+    border: 1px solid #cbcbcb;
+    width: 80px;
+    vertical-align: middle;
+    text-align: center;
+    height: 37px;
+    font-size: 13px;
+    color: #636363;
+    font-weight: bold;
+}
+
+tr.productivityRows td.weekLegend,
+table#productivityTableMiddle td.weekLegend{
+    background-color: #ffe59e;
+    border-right: 1px solid #696969 !important;
+}
+
+tr.productivityRows td.weekLegendBorder{
+    border-right: 1px solid #696969 !important;
+}
+
+tr.productivityRows td.weekLegendLast{
+    border-bottom: 1px solid #696969 !important;
+}
+
+table#productivityTableMiddle .weekLegendFirst{
+    border-top: 1px solid #696969;
+}
+
+.lastColumnContainer{
+    float: left;
+    width: 37px;
+}
+
+#oneColumnTable{
+     width: 37px;
+}
+
+    #oneColumnTable th{
+        height: 113px;
+        border: 1px solid #e7e7e7;
+    }
+
+    #oneColumnTable td{
+        height: 48px;
+        width: 37px;
+        border: 1px solid #e7e7e7;
+    }
+
+.colorLegends{
+    font-size: 13px;
+    color: #636363;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 27px;
+    padding-bottom: 20px;
+}
+
+    .colorLegends .caption {
+        margin-bottom: 9px;
+        margin-left: 10px;
+    }
+
+#colorLegendsTable td{
+    border: 1px solid #d0d0d0;
+    height: 28px;
+    vertical-align: middle;
+    width: 101px;
+    text-align: left;
+    text-indent: 8px;
+}
+
+#colorLegendsTable td.normal{
+    background-color: #ccffcc;
+    width: 100px;
+    text-align: center;
+}
+
+#colorLegendsTable td.warning{
+    background-color: #ffffd8;
+    width: 148px;
+    text-align: center;
+}
+
+#colorLegendsTable td.alert{
+    background-color: #ffdbdb;
+    width: 93px;
+    text-align: center;
+}
+
+/* Upload Data Modal */
+.uploadLabel{
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    color: #515965;
+    width: 109px;
+    margin-top: 8px;
+}
+
+.uploadSeparator{
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    color: #515965;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+.uploadModal label.radio{
+    margin-top: 8px;
+}
+
+.uploadModal .uploadRadio{
+    margin-left: 8px;
+}
+
+.uploadModal .uploadTaskBtn{
+    float: right;
+    padding-left: 14px;
+    padding-right: 17px; 
+}
+
+.uploadModal .uploadTaskBtn .uploadIco{
+    margin-top: 6px;
+}
+
+.uploadRow{
+    overflow: hidden;
+    margin: 14px 0!important;
+}
+
+.uploadRow input.uploadInput{
+    float: left;
+    width: 264px !important;
+}
+.secondUploadRow{
+    padding-bottom: 23px !important;
+}
+
+.uploadRow .browseBtn{
+    margin-left: 14px;
+    padding-left: 20px;
+    padding-right: 21px;
+}
+
+#progressBarContainer{
+    position: relative;
+}
+
+.tasksProgressBarContainer{
+    width: 500px;
+    height: 200px;
+}
+
+.materialProgressBarContainer{
+    height: 150px;
+}
+
+#progressBarContainer .progressBarBg{
+    position: absolute;
+    left: 142px;
+    top: 74px;
+    border: 1px solid #009a49;
+    border-radius: 3px;   
+    width: 262px;
+    height: 29px;
+    box-shadow: 2px 2px 2px #eaeaea inset;
+    padding: 1px;
+}
+
+.materialProgressBarContainer .progressBarBg{
+    top: 54px !important;
+}
+
+#progressBarContainer .progressBar{
+    background-color: #009a49;
+    height: 29px;
+    width: 0%;
+    border-radius: 3px;
+}
+
+#progressBarContainer .progressCounter{
+    position: absolute;
+    color: #009a49;
+    font-weight: bold;
+    left: 130px;
+    top: 8px;
+}
+/* table pagination */
+
+.tablePaginationContainer{
+    height: 31px;
+    border: 1px solid #d0d0d0;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-top: 2px;
+}
+
+.tablePagination{
+    height: 31px;
+    background: url(../images/pagination_bg.png) repeat-x top;
+    color: #333333;
+    line-height: 29px;
+}
+
+.perPageArea{
+    float: left;
+    padding-left: 10px;
+}
+
+.pageNumberArea{
+    float: right;
+    padding-right: 10px;
+}
+
+    .pageNumberArea .nbr{
+        color: #00a9e0;
+        margin: 0 7px 0 6px;
+    }
+
+    .pageNumberArea span.nbr {
+        color: #333333;
+    }
+
+    .pageNumberArea .nbrNext{
+        margin-right: 6px;
+        margin-left: 4px;
+    }
+
+    .pageNumberArea .nbrPrev{
+        margin-left: 6px;
+        margin-right: 4px;
+    }
+
+    .pageNumberArea .pagesTxt{
+        float: left;
+        margin-right: 20px;
+    }
+
+/* Modal Window */
+
+.modalWindow{
+    background-color: #FFF;
+}
+
+    .modalWindow .caption{
+        height: 36px;
+        border-top: 1px solid #a7a7a7;
+        border-bottom: 1px solid #d0d0d0;
+        border-left: 1px solid #d0d0d0;
+        border-right: 1px solid #d0d0d0;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    .modalWindow .captionInner{
+        background: url(../images/modal_caption_bg.png) repeat-x top;
+        height: 36px;
+    }
+
+        .modalWindow .captionInner h2.title{
+            font-size: 18px;
+            color: #009a49;
+            text-shadow: 0px 1px #ededed;
+            padding-top: 8px;
+            padding-left: 16px;
+        }
+
+    .modalWindow .alertQuestion{
+        padding: 50px 0;
+        text-align: center;
+        color: #515965;
+    }
+
+    .modalWindow .modalButtonsArea{
+        border-top: 1px solid #cdcdcd;
+        margin-left: 21px;
+        margin-right: 23px;
+        padding-top: 14px;
+        padding-bottom: 4px;
+        overflow: hidden;
+    }
+
+        .modalWindow .modalButtonsArea a.cancelBtn{
+            float: right;
+            margin-left: 14px;
+        }
+
+    .modalWindow h4.formTitle{
+        font-size: 14px;
+        font-weight: bold;
+        color: #515965;
+        border-bottom: 1px solid #d0d0d0;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .modalWindow .searchUserModalCol1{
+        float: left;
+        width: 200px;
+    }
+
+    .modalWindow .searchUserModalCol2{
+        float: left;
+        width: 260px;
+    }
+
+    .modalWindow .modalSeachBtn{
+        padding-left: 10px;
+        padding-right: 10px;
+        float: right;
+    }
+
+    .modalWindow .modalSearchResult{
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+        .modalSearchResult .searchMessage{
+            padding-bottom: 10px;
+            font-weight: bold;   
+            color: #515965;
+            font-size: 13px;
+            border-top: 1px solid #d0d0d0;
+            padding-top: 10px;
+        }
+
+/* Actions buble */
+.actionGroupBubble{
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background-color: #FFF;
+    border: 2px solid #1ca55d;
+    border-radius: 5px;
+    width: 181px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.15);
+}
+
+    .actionGroupBubble .arrowRight{
+        position: absolute;
+        right: -10px;
+        top: 46px;
+        background: url(../images/icons.png) no-repeat -86px -73px;
+        width: 10px;
+        height: 24px;
+    }
+
+    .actionGroupBubble .arrowLeft{
+        position: absolute;
+        left: -10px;
+        top: 46px;
+        background: url(../images/icons.png) no-repeat -76px -73px;
+        width: 10px;
+        height: 24px;
+    }
+
+    .actionGroupBubble .actionsContainer{
+        padding: 6px 11px 6px 8px;
+    }
+
+        .actionGroupBubble .actionsContainer LI{
+            overflow: hidden;
+            line-height: 30px;
+            border-bottom: 1px solid #b2e1c8;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+
+        .actionGroupBubble .actionsContainer LI.first{
+            padding-top: 0;
+        }
+
+        .actionGroupBubble .actionsContainer LI.last{
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .actionGroupBubble .actionsContainer LI a{
+            font-size: 13px;
+            font-weight: bold;
+            color: #009a49;
+            margin-left: 4px;
+        }
+
+        .actionGroupBubble .actionsContainer LI .btn{
+            width: 29px;
+            height: 29px;
+        }
+
+        .actionGroupBubble .actionsContainer LI .btn:hover {
+            background-position: left top;
+        }
+
+        .actionGroupBubble .actionsContainer LI i.editIco{
+            margin-left: 6px;
+            margin-top: 5px;
+        }
+
+.scheduleSummaryPadding{
+    padding-bottom: 20px;
+}
+
+/* Steps */
+.stepsContainer{
+    
+}
+
+.steps{
+    border: 1px solid #000;
+    height: 36px;
+    margin-bottom: 13px;
+}
+
+    .steps ul{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 37px;
+    }
+
+    .steps ul li{
+        position: absolute;
+        right: 1px;
+        top: 0;
+        font-size: 18px;
+        color: #c9c9c9;
+        line-height: 39px;
+    }
+
+    .steps ul li > span{
+        float: left;
+        width: 261px;
+        height: 36px;
+        padding-left: 79px;
+        background: url(../images/steps_bg.png) repeat-x 0 -180px;
+    }
+
+    .steps ul li.materials{
+        right: 313px;
+    }
+
+    .steps ul li.materials > span{
+        width: 255px;
+        padding-left: 95px;
+    }
+
+    .steps ul li.tasks{
+        right: 643px;
+    }
+
+    .steps ul li.tasks > span{
+        width: 266px;
+        padding-left: 108px; 
+    }
+
+    .steps ul li.information{
+        right: 974px;
+    }
+
+    .steps ul li.information > span{
+        width: 257px;
+        padding-left: 51px;
+    }
+
+    .steps ul li i.arrow{
+        float: right;
+        background: transparent url(../images/steps_bg.png) repeat-x 0 -71px;
+        width: 16px;
+        height: 36px;
+    }
+
+    .steps ul li.current i.arrow{
+        background-position: 0 0;
+    }
+
+    .steps ul li.current > span{
+        color: #ffffff;
+        background-position:0 -108px;
+        text-shadow: 0 -1px #005d2c;
+    }
+
+    .steps ul li.prev i.arrow{
+        background-position: 0 -36px;
+    }
+
+    .steps ul li.prev > span{
+        color: #01ca60;
+        background-position:0 -144px;
+    }
+
+/* Tabs Navigation */
+.tabsNavigation ul,
+.tabsNavigationLink ul{
+    overflow: hidden;
+}
+
+    .tabsNavigation ul li,
+    .tabsNavigationLink ul li{
+        float: left;
+        overflow: hidden;
+        padding: 1px;
+        background-color: #FFF;
+        border-bottom: 1px solid #d0d0d0;
+        border-right: 1px solid #d0d0d0;
+    }
+
+    .tabsNavigation ul li.first,
+    .tabsNavigationLink ul li.first{
+        border-left: 1px solid #b7b7b7;
+    }
+
+    .tabsNavigation ul li a,
+    .tabsNavigationLink ul li a{
+        float: left;
+        width: 165px;
+        height: 35px;
+        text-align: center;
+        color: #8ebfa0;
+        text-shadow: 0 1px #e4e4e4;
+        background: url(../images/inactive_tabs.png) repeat-x top;
+        line-height: 35px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .tabsNavigation ul li.active,
+    .tabsNavigationLink ul li.active{
+        border-bottom: none;
+    }
+
+    .tabsNavigation ul li.active a,
+    .tabsNavigationLink ul li.active a{
+        background: url(../images/inactive_tabs.png) repeat-x bottom;
+        color: #009a49;
+        text-shadow: 0 1px #FFF;
+    }
+
+    .tabsNavigation ul li a:hover,
+    .tabsNavigationLink ul li a:hover{
+        text-decoration: none;
+        background-position: bottom;
+    }
+
+    .tabsNavigation ul li.remaining,
+    .tabsNavigationLink ul li.remaining{
+        display: block;
+        float: none;
+    }
+
+    .tabsNavigation ul li.remaining > span,
+    .tabsNavigationLink ul li.remaining > span{
+        display: block;
+        width: 100%;
+        height: 35px;
+        background: url(../images/inactive_tabs.png) repeat-x top;
+    }
+
+.tabsContent{
+    border-left:  1px solid #d5d5d5;
+    border-right: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+/* combobox that contains buttons */
+
+.comboList{
+    position: absolute;
+    border: 1px solid #059c4d;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px #2f2f2f;
+    width: 161px;
+    background-color: #FFF;
+}
+
+.comboListInner{
+    box-shadow: 2px 2px 5px #cdcdcd inset;
+    padding: 3px 3px 0 3px;
+}
+
+    .comboListInner li{
+        overflow: hidden;
+        margin-bottom: 3px;
+    }
+
+    .comboListInner a.btn{
+        width: 153px;
+    }
+
+    .comboListInner .printIco{
+        margin-left: 48px;
+        margin-right: 9px;
+    }
+
+    .comboListInner .exportIco{
+        margin-left: 28px;
+        margin-right: 6px;
+    }
+
+    .comboListInner .exportIco2{
+        margin-left: 23px;
+    }
+
+/* Modal search result table */
+#searchUsersResultTable{
+    width: 100%;
+}
+
+    #searchUsersResultTable .scrollable{
+        height: 240px;
+    }
+
+    #searchUsersResultTable th.col1{
+        width: 16px;
+    }
+
+    #searchUsersResultTable td.col1{
+        width: 40px;
+    }
+
+    #searchUsersResultTable th.col2{
+        width: 80px;
+    }
+
+    #searchUsersResultTable td.col2{
+        width: 197px;
+    }
+
+    #searchUsersResultTable th.col3{
+        width: 100px;
+    }
+
+    #searchUsersResultTable td.centerCb label{
+        margin-left: 13px;
+    }
+
+/* color box custom style */
+#cboxClose{
+    top: 11px;
+    right: 13px;
+    background: url(../images/icons.png) no-repeat 0 -85px;
+    width: 11px;
+    height: 12px;
+}
+
+#cboxClose:hover{
+    background-position: -16px -85px;
+}
+
+#cboxMiddleLeft,
+#cboxContent,
+#cboxMiddleRight{
+    width: 5px;
+}
+
+#cboxTopLeft,
+#cboxTopCenter,
+#cboxTopRight{
+    height: 5px;
+}
+
+#cboxBottomLeft,
+#cboxBottomCenter,
+#cboxBottomRight{
+    height: 5px;
+}
+
+#cboxTopLeft,
+#cboxTopRight,
+#cboxBottomLeft,
+#cboxBottomRight{
+    width: 5px;
+}
+
+#cboxLoadedContent{
+    padding: 0;
+    margin: 0;
+}
+
+/* modals specific sizes */
+#deleteUserModalWindow{
+    width: 531px;
+    height: 200px;
+}
+
+#errorModalWindow,
+#offlineModalWindow,
+#deleteUserModalWindow,
+#loginModalWindow{
+    width: 531px;
+    height: 200px;
+}
+
+#addMoreUsersModal{
+    width: 531px;
+    /*height: 270px;*/
+}
+
+/* Buttons */
+
+.btn{
+    float: left;
+    border: 1px solid #009a49;
+    border-radius: 3px;
+    height: 29px;
+    background: url(../images/btn_bg.png) repeat-x top;
+    line-height: 29px;
+    text-shadow: 0 1px #FFF;
+}
+
+.btn:hover{
+    text-decoration: none;
+    background-position: bottom;
+}
+
+.moreWeeksBtn{
+    width: 80px;
+    margin: 0 5px;
+    margin-top: 10px;
+}
+
+i.plusIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat 0 -27px;
+    width: 11px;
+    height: 11px;
+    margin-top: 9px;
+    margin-right: 7px;
+}
+
+i.filterIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat 0 -40px;
+    width: 10px;
+    height: 12px;
+    margin-top: 9px;
+    margin-right: 8px;
+}
+
+i.searchIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -18px -28px;
+    width: 11px;
+    height: 12px;
+    margin-top: 9px;
+    margin-right: 7px;
+}
+
+i.nextIco{
+    float: right;
+    background: url(../images/icons.png) no-repeat -17px -43px;
+    width: 9px;
+    height: 9px;
+    margin-top: 10px;
+}
+
+i.prevIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -33px -47px;
+    width: 9px;
+    height: 9px;
+    margin-top: 10px;
+}
+
+i.editIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -34px 0;
+    width: 18px;
+    height: 19px;
+    margin-top: 5px;
+    margin-left: 9px;
+}
+
+i.deleteIco{
+    float: left;
+    width: 15px;
+    height: 15px;
+    background: url(../images/icons.png) no-repeat -35px -83px;
+    margin-left: 7px;
+    margin-top: 7px;
+}
+
+i.graphIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -59px -84px;
+    width: 11px;
+    height: 13px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+i.inserRowAboveIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -56px -98px;
+    width: 15px;
+    height: 19px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+i.inserRowBelowIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -78px -101px;
+    width: 15px;
+    height: 19px;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+i.copyIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -98px -103px;
+    width: 15px;
+    height: 13px;
+    margin-left: 7px;
+    margin-top: 8px;
+}
+
+i.pastIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -121px -102px;
+    width: 15px;
+    height: 17px;
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+i.pastInsertAboveIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -144px -101px;
+    width: 15px;
+    height: 17px;
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+i.approveIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -100px -73px;
+    width: 7px;
+    height: 7px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+i.finishIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -100px -73px;
+    width: 7px;
+    height: 7px;
+    margin-top: 11px;
+    margin-right: 9px;
+}
+
+i.synchronizeIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -99px -85px;
+    width: 12px;
+    height: 13px;
+    margin-left: 9px;
+    margin-top: 8px;
+}
+
+i.summaryIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -116px -70px;
+    width: 13px;
+    height: 13px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+i.historyIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -116px -86px;
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+i.nextIco2{
+    float: right;
+    background: url(../images/icons.png) no-repeat 0 -19px;
+    width: 4px;
+    height: 6px;
+    margin-top: 11px;
+    margin-left: 8px;
+}
+
+i.prevIco2{
+    float: left;
+    background: url(../images/icons.png) no-repeat -4px -19px;
+    width: 4px;
+    height: 6px;
+    margin-top: 11px;
+    margin-right: 8px;
+}
+
+i.uploadIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat 0 -99px;
+    width: 15px;
+    height: 18px;
+    margin-top: 8px;
+    margin-right: 6px;
+}
+
+i.printIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -20px -101px;
+    width: 13px;
+    height: 14px;
+    margin-top: 8px;
+    margin-left: 9px;
+    margin-right: 8px;
+}
+
+i.exportIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -131px -72px;
+    width: 16px;
+    height: 21px;
+    margin-top: 5px;
+    margin-left: 6px;
+    margin-right: 3px;
+}
+
+i.expandIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -39px -101px;
+    width: 7px;
+    height: 4px;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+i.actionGroupIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -115px 0;
+    width: 21px;
+    height: 21px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+i.unindentIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -113px -25px;
+    width: 23px;
+    height: 17px;
+    margin-left: 2px;
+    margin-top: 6px;
+}
+
+i.indentIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -121px -47px;
+    width: 15px;
+    height: 17px;
+    margin-left: 7px;
+    margin-top: 6px;
+}
+
+a.indentBtn{
+    position: absolute;
+    padding-right: 7px;
+    left: 73px;
+    top: 8px;
+}
+
+a.unindentBtn{
+    position: absolute;
+    padding-right: 4px;
+    left: 39px;
+    top: 8px;
+}
+
+a.actionsBtn{
+    position: absolute;
+    padding-right: 4px;
+    left: 5px;
+    top: 8px;
+}
+
+a.bubleLink{
+    position: absolute;
+    left: 42%;
+    top: 7px;
+    padding-right: 4px;
+}
+
+a.uploadTaskBtn{
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 18px;
+}
+
+a.printExportBtn{
+    padding-left: 5px;
+    padding-right: 9px;
+    margin-left: 10px;
+}
+
+a.editIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -34px 0;
+    width: 18px;
+    height: 19px;
+}
+
+a.editIco:hover{
+    background-position: -34px -24px;
+}
+
+a.userPermissionsIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -63px 0;
+    width: 20px;
+    height: 20px;
+}
+
+a.userPermissionsIco:hover{
+    background-position: -63px -24px;
+}
+
+a.deleteProjectIco{
+    float: left;
+    background: url(../images/icons.png) no-repeat -90px 0;
+    width: 15px;
+    height: 15px;
+}
+
+a.deleteProjectIco:hover{
+    background-position: -90px -24px;
+}
+
+a.cancelBtn{
+    float: left;
+    margin-left: 19px;
+    padding-left: 22px;
+    padding-right: 21px;
+}
+
+a.prevBtn{
+    float: left;
+    margin-left: 19px;
+    padding-left: 8px;
+    padding-right: 11px;
+}
+
+a.graphBtn{
+    display: block;
+    width: 11px;
+    height: 13px;
+    background: url(../images/icons.png) -59px -84px;
+    margin-left: 12px;
+    margin-top: 15px;
+}
+
+.createNewProjectBtn{
+    padding-left: 14px;
+    padding-right: 13px;
+    margin-right: 11px;
+}
+
+.filterBtn{
+    padding-left: 15px;
+    padding-right: 21px;
+}
+
+.searchBtn{
+    padding-left: 15px;
+    padding-right: 21px;
+}
+
+.filtered {
+    border-color: red;
+}
+
+.resetBtn {
+    margin-right: 15px;
+}
+
+.expandCollapseBtn{
+    float: left;
+    background: url(../images/icons.png) no-repeat -33px -59px;
+    width: 18px;
+    height: 11px;
+}
+
+.collapseBtn {
+    background-position: -55px -60px!important;
+}
+/* checkbox style */
+label.checkbox{
+    cursor: pointer;
+    float: left;
+    width:  13px;
+    height: 13px;
+    background: url(../images/icons.png) no-repeat 0 -57px;
+}
+
+label.checkbox input[type=checkbox]{
+    display: none;
+}
+
+/* radio style */
+label.radio{
+    cursor: pointer;
+    float: left;
+    width:  13px;
+    height: 13px;
+    background: url(../images/icons.png) no-repeat -78px -57px;
+}
+
+label.radio input[type=radio]{
+    display: none;
+}
+
+.cbText{
+    float: left;
+    font-size: 14px;
+    color: #515965;
+    margin-left: 8px;
+}
+
+.radioText{
+    float: left;
+    font-size: 12px;
+    color: #515965;
+    margin-top: 9px;
+    margin-left: 6px;
+    margin-right: 10px;
+}
+
+.radioText:hover{
+  cursor: pointer;
+}
+
+.radioBoxChecked{
+  background-position: -97px -57px!important;
+}
+
+.radioSpacing{
+    margin-left: 10px;
+}
+
+select.filterWidth{
+    width: 296px;
+}
+
+.anRadios{
+	float: left;
+	padding-top: 10px;
+	padding-left: 30px;
+	color: #009a49;
+}
+
+	.anRadios .radio{
+		margin-left: 10px;
+	}
+
+	.anRadios .radioText{
+		color: #009a49;
+		margin-top: 1px;
+	}
+
+/* Misc */
+.hide{
+    display: none;
+}
+
+.noTopBorder{
+    border-top: none !important;
+}
+
+.noRightBorder{
+    border-right: none !important;
+}
+
+.noLeftBorder{
+    border-left: none !important;
+}
+
+.padding5{
+    padding: 5px;
+}
+
+.w150{
+    width: 150px !important;
+}
+
+.container{
+    overflow: hidden;
+}
+
+.paddingBottom10{
+    padding-bottom: 17px !important;
+}
+
+.noMarginRight{
+    margin-right: 0; 
+}
+
+.relative{
+    position: relative;
+}
+
+.marginBottom18{
+    margin-bottom: 14px !important;
+}
+
+.fleft{
+    float: left !important;
+}
+
+.alignRight{
+    text-align: right !important;
+}
+
+.right0{
+    right: 0 !important;
+}
+
+.noTopBottomPadding{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.mLeft10{
+    margin-left: 10px !important;
+}
+
+.tableLH{
+    line-height: normal !important;
+    height: 33px !important;
+    padding: 0 !important;
+}
+
+.indent15{
+    text-indent: 15px !important;
+}
+
+.indent20{
+    text-indent: 20px !important;
+}
+
+.txtAlignLeft{
+    text-align: left !important;
+}
+
+/* IE */
+.custom-combobox-input::-ms-clear,
+.datepicker::-ms-clear {
+    display: none;
+}
+
+/* new css */
+.ui-datepicker-calendar .datapicker-gray{
+ background-color: #a6a6a6;
+}
+
+/* login page */
+.loginBody {
+	background: #f1f1f1;
+}
+ 
+	.loginBox {
+		width: 1000px;
+		height: 460px;
+		margin: -230px -500px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 5;
+	}
+	
+		/* .loginBox .lefts */
+		.loginBox .lefts {
+			float: left;
+			width: 433px;
+			padding: 100px 54px 0 0;
+			text-align: right;
+		}
+		
+			.loginBox .logoText {
+				font-size: 36px;
+				font-weight: 700;
+				color: #009a49;
+				text-align: right;
+				line-height: 45px;
+				padding-top: 18px;
+			}
+			
+		/* .loginBox .rights */
+		.loginBox .rights {
+			float: right;
+			border-left: 3px solid #eaeaea;
+		}
+		
+			.loginBox .rights .contents {
+				border-left: 2px solid #fff;
+				padding: 100px 0 0 0;
+				min-height: 360px;
+				width: 508px;
+			}
+		
+			.loginBox .rights .contents h3 {
+				font-size: 14px;
+				color: #4e4f51;
+				font-weight: bold;
+				width: 450px; 
+				text-align: center;
+				height: 30px;
+				line-height: 30px;
+				padding-top: 22px;
+				padding-bottom: 4px;
+			}
+		
+			.loginBox .rights .contents .forms .rows {
+				padding: 14px 0 0 0;
+				height: 34px;
+			}
+			
+			.loginBox .rights .contents .forms .rows label {
+				font-size: 14px;
+				color: #4e4f51;
+				font-weight: bold;
+				height: 34px;
+				line-height: 34px;
+				width: 100px;
+				padding-right: 13px;
+				text-align: right;
+				display: inline-block;
+			}
+		
+			.loginBox .rights .contents .forms .rows label,		
+			.loginBox .rights .contents .forms .rows .inputBox {
+				float: left;
+			}
+		
+			.loginBox .rights .contents .forms .rows .inputBox {
+				background: #e0e0e0;
+				padding: 2px;
+				height: 30px;
+				display: inline-block;
+				border-radius: 3px;
+			}
+		
+				.loginBox .rights .contents .forms .rows .inputBox .text {
+					font-size: 12px;
+					background: #fff;
+					color: #515965;
+					height: 20px;
+					line-height: 20px;
+					width: 295px;
+					text-indent: 10px;
+					margin: 0;
+					padding: 4px 0;
+					border: 1px solid #bfbfbf;
+					border-radius: 2px;
+					box-shadow: none;
+					font-family: Arial;
+				}
+			
+				.loginBox .rights .contents .forms .rows .inputBox .text[type='password'] {
+					letter-spacing: 5px;
+				}
+			
+			/* .loginBox .checkbox-text */
+			.loginBox .rights .contents .forms .checkbox-text {
+				text-shadow: 0 1px #fff;
+				height: 25px;
+				line-height: 25px;
+				padding: 10px 0 10px 115px;
+				width: 302px;
+				display: block;
+			}
+				.loginBox .rights .contents .forms .checkbox-text .checkbox-outer {
+					float: left;
+					display: inline-block;
+				}
+				
+				.loginBox .rights .contents .forms .checkbox-text .checkbox-outer #labelRememberMe {
+					margin: 6px 0 0 0;
+                    min-height: 10px;
+                    padding: 0;
+				}
+				
+				.loginBox .rights .contents .forms .checkbox-text .checkbox-outer .cbText,
+				.loginBox .rights .contents .forms .checkbox-text .forgotPassword a {
+					color: #009a49;
+				}
+				
+				.loginBox .rights .contents .forms .checkbox-text .forgotPassword {
+					float: right;
+					padding-right: 5px;
+					display: none;
+				}
+					
+					.loginBox .rights .contents .forms .checkbox-text .forgotPassword a {
+						text-decoration: underline;
+					}
+						
+						.loginBox .rights .contents .forms .checkbox-text .forgotPassword a:hover {
+							text-decoration: none;
+						}
+				
+			/* .loginBox .formButtons */
+			.loginBox .rights .contents .forms .formButtons {
+				padding: 6px 0 0 115px;
+				display: block;
+			}
+			
+				.loginBox .rights .contents .forms .formButtons .loginBtn {
+					padding-right: 25px;
+					padding-left: 25px;
+                    color: green;
+                    height: 31px;
+                    cursor: pointer;
+				}
+
+
+/* commonly style */
+.marginTop23 {
+	margin-top: 23px;
+}
+
+.panel .borderTop {
+	border-top: 1px solid #d5d5d5;
+}
+
+.col62 {
+	width: 50px;
+}
+
+.rowSpan {
+	display: block;
+}
+
+.lineHeight18 {
+	line-height: 18px;
+}
+
+/* .materialsFunctionsArea */
+.materialsFunctionsArea .buttonsArea {
+	float: right;
+	padding-right: 15px;
+}
+
+/* .radioGroup */
+.radioGroup {
+	position: relative;
+	float: left;
+	margin: 20px 7px 4px 9px;
+}
+
+	.radioGroup .labelSchedule {
+		height: 20px;
+		line-height: 20px;
+		background:#fff;
+		position: absolute;
+		top: -8px;
+		left: 12px;
+	}
+	
+		.radioGroup .anRadios {
+			border:1px solid #e9e9e9;
+			min-width: 145px;
+			height: 35px;
+			padding-top: 25px;
+			padding-right: 15px;
+			padding-left: 0;
+		}
+		
+			.radioGroup .anRadios .radioText {
+				color: #515965;
+				margin-right: 8px;
+			}
+
+/* .editMaterialsInfoBtn */			
+.editMaterialsInfoBtn {
+	padding-right: 10px;
+}
+
+	.editMaterialsInfoBtn .editIco {
+		margin-right: 5px;
+	}
+
+/* .scheduleMaterialsContent */	
+.scheduleMaterialsContent .scheduleMaterialsTable1 .maxHeight{
+	height: 112px !important;
+}
+
+.scheduleMaterialsContent .scheduleMaterialsTable1 .subTitle {
+	padding-left: 44px !important;
+}
+
+.scheduleMaterialsContent .scheduleMaterialsTable1 .desc2 {
+	width: 210px !important;
+}
+
+.scheduleMaterialsTableBox .scheduleMaterialsTable1 .columnSeparator,
+.scheduleMaterialsTableBox .scheduleSummaryTable2 .columnSeparator {
+	background: #fff;
+}
+	
+.scheduleMaterialsContent .scheduleMaterialsTable2Container {
+	width: 755px;
+	float: left;
+	overflow-x: auto;
+	border-right: 1px solid #c8c8c8;
+	border-left: 1px solid #d3d3d3;
+	margin-left: -1px;
+}
+
+.scheduleMaterialsContent .lastColumnContainer {
+	width: 1px;
+	border-left: 1px solid #d5d5d5;
+}
+
+.scheduleMaterialsContent .lastColumnContainer #oneColumnTable {
+	width: 1px;
+}
+
+.scheduleMaterialsContent .scheduleSummaryTable2 .hRow1 {
+	height: 37px;
+}
+
+.scheduleMaterialsContent .scheduleSummaryTable2 {
+	width: auto;
+}
+
+.scheduleMaterialsContent .scheduleSummaryTable2 .width230  {
+	width: 216px;
+}
+
+.scheduleMaterialsContent .width700 {
+	width: 708px !important;
+}
+
+.scheduleMaterialsContent .width740 {
+	width: 737px !important;
+}
+
+.scheduleMaterialsContent .width950 {
+	width: 916px !important;
+}
+
+.scheduleMaterialsContent .width1300 {
+	width: 1300px !important;
+}
+	.scheduleMaterialsContent #scheduleSummaryVerticalScroll .noLeftBorder{
+		width: 72px !important;
+	}
+	.scheduleMaterialsContent #scheduleSummaryVerticalScroll td{
+		width: 71px !important;
+	}
+.scheduleMaterialsContent .scheduleSummaryTable2 td {
+	width: 81px;
+}
+
+.scheduleMaterialsContent  .columnSeparator{
+    width: 5px!important;
+    border-bottom: none !important;
+    border-top: none !important;
+}
+
+.scheduleMaterialsContent  #scheduleSummaryVerticalScroll td.columnSeparator{
+    width: 5px!important;
+    border-bottom: none !important;
+    border-top: none !important;
+}
+
+.scheduleMaterialsContent .scheduleSummaryTable2 #scheduleSummaryVerticalScroll2 td{
+	width: 73px;
+}
+.scheduleMaterialsContent .scheduleSummaryTable2 #scheduleSummaryVerticalScroll2 .noLeftBorder {
+	width: 75px;
+}
+
+/* .chartMaterialsFunctionsArea */
+.chartMaterialsFunctionsArea {
+	border-bottom:1px solid #d5d5d5;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.chartMaterialsFunctionsArea .titleLeft {
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+	color: #515965;
+	padding: 12px 0;
+	line-height: 30px;
+}
+
+.chartMaterialsFunctionsArea .buttonsArea {
+	float: right;
+	padding-right: 0;
+}
+
+.chartMaterialsFunctionsArea .buttonsArea .graphButtonsContainer {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.chartMaterialsChart {
+	text-align: center;
+	padding: 40px 0 80px 0;
+}
+
+/* .scheduleEquipmentsContent */
+.scheduleEquipmentsContent .panelContent {
+	border: none;
+}
+
+.scheduleEquipmentsContent .createNewProjectBtn {
+	margin-right: 0;
+}
+
+.scheduleEquipmentsContent a.printExportBtn {
+	margin-right: 11px;
+}
+
+.scheduleEquipmentsContent .panelContentInner .form .filterCols1,
+.scheduleEquipmentsContent .panelContentInner .form .filterCols2,
+.scheduleEquipmentsContent .panelContentInner .form .filterCols3,
+.scheduleEquipmentsContent .panelContentInner .form .filterCols4 {
+	float: left;
+	padding-top: 10px;
+}
+
+.scheduleEquipmentsContent .panelContentInner .form .filterCols1,
+.scheduleEquipmentsContent .panelContentInner .form .filterCols2 {
+	border-right: 1px solid #dcdcdc;
+	width: 316px;
+	margin-right: 20px;
+}
+
+	.scheduleEquipmentsContent .panelContentInner .form input.text {
+		width: 294px;
+	}
+
+.scheduleEquipmentsContent .panelContentInner .form .filterCols3 {
+	border-right: 1px solid #dcdcdc;
+	width: 285px;
+	margin-right: 20px;
+}
+
+	.scheduleEquipmentsContent .panelContentInner .form .filterCols3 .text,
+	.scheduleEquipmentsContent .panelContentInner .form .filterCols4 .text {
+		width: 124px;
+	}
+	
+.scheduleEquipmentsContent .tableHeader {
+	background: none;
+}
+	
+	.scheduleEquipmentsContent .noLeftBorder {
+		border-left: 0 !important;
+	}
+	.scheduleEquipmentsContent .noRightBorder {
+		border-right: 0 !important;
+	}
+	
+	.scheduleEquipmentsContent #scheduleSummaryTable1 {
+		width: auto;
+	}
+	
+	.scheduleEquipmentsContent #scheduleSummaryTable1Scrolling .last {
+		border-right: 0 !important;
+	}
+	
+	.scheduleEquipmentsContent #scheduleSummaryTable1 .col1 {
+		width: 80px;
+	}
+	
+	.scheduleEquipmentsContent #scheduleSummaryTable1 .col2 {
+		width: 350px;
+	}	
+	
+	.scheduleEquipmentsContent #scheduleSummaryTable1 .col3,
+	.scheduleEquipmentsContent #scheduleSummaryTable1 .col4,
+	.scheduleEquipmentsContent #scheduleSummaryTable1 .col5,
+	.scheduleEquipmentsContent #scheduleSummaryTable1 .col6,
+	.scheduleEquipmentsContent #scheduleSummaryTable1 .col9 {
+		width: 90px;
+	}
+	
+	.scheduleEquipmentsContent #scheduleSummaryTable1 .col110 {
+		width: 108px;
+	}
+	
+	.scheduleEquipmentsContent #scheduleSummaryTable1 .col10 {
+		width: 140px;
+	}
+	
+	.scheduleEquipmentsContent #scheduleSummaryTable1 .col11 {
+		width: 80px;
+	}
+	
+	.scheduleEquipmentsContent #scheduleSummaryTable1 .col100 {
+		width: 103px;
+	}
+	.scheduleEquipmentsContent #scheduleSummaryTable1 .col180 {
+		width: 188px;
+	}
+	.scheduleEquipmentsContent #scheduleSummaryTable1 .col220 {
+		width: 220px;
+	}
+
+		.scheduleEquipmentsContent .width1300 {
+			width: 1300px !important;
+		}
+		
+		.scheduleEquipmentsContent .width1120 {
+			width: 1120px !important;
+		}
+		
+		.scheduleEquipmentsContent .scheduleMaterialsTable2Container {
+			width: 863px;
+			float: left;
+			overflow-x: auto;
+		}
+		
+		.scheduleEquipmentsContent .scheduleSummaryTable2 .col1 {
+			width: 75px;
+		}
+      
+			/* .scheduleEquipmentsContent .tableDefault */
+			.scheduleEquipmentsContent .tableDefault th {
+				background: url(../images/table_default_th_bg.png) repeat-x top;
+				vertical-align: middle;
+				height: 46px;
+			}
+			
+			.scheduleEquipmentsContent .tableDefault th span.tbHeader {
+				line-height: 13px;
+				height: auto;
+				background: none;
+				position: static;
+			}
+
+.scheduleEquipmentsContent .tableDefault .sortArrow {
+	position: static;
+	display: inline-block;
+	top: 0;
+	line-height: 0;
+	font-size: 0;
+	margin-left: 8px;
+	margin-top: 0;
+}
+
+	.scheduleEquipmentsContent .tableDefault tr.firstRow td {
+		border-top: 1px solid #e7e7e7;
+	}
+
+	.scheduleEquipmentsContent .scheduleSummaryTable2 .col1 {
+		width: 90px !important;
+		padding-left: 0;
+	}
+	
+	.scheduleEquipmentsContent .scheduleSummaryTable2 .col2,
+	.scheduleEquipmentsContent .scheduleSummaryTable2 .col3,
+	.scheduleEquipmentsContent .scheduleSummaryTable2 .col4,
+	.scheduleEquipmentsContent .scheduleSummaryTable2 .col5,
+	.scheduleEquipmentsContent .scheduleSummaryTable2 .col6,
+	.scheduleEquipmentsContent .scheduleSummaryTable2 .col7,
+	.scheduleEquipmentsContent .scheduleSummaryTable2 .col8,
+	.scheduleEquipmentsContent .scheduleSummaryTable2 .col9 {
+		width: 140px !important;
+	}
+	
+	
+	.scheduleEquipmentsContent .scheduleSummaryTable2 .last {
+		border-right: 0 !important;
+	}
+	.scheduleEquipmentsContent .scheduleSummaryTable2 .col10 {
+		width: 190px !important;
+	}
+
+		.scheduleEquipmentsContent .lastColumnContainer {
+			width: 100px;
+		}
+		
+		.scheduleEquipmentsContent .lastColumnContainer #oneColumnTable {
+			width: auto;
+		}
+		
+		.scheduleEquipmentsContent .lastColumnContainer #oneColumnTable td {
+			width: 80px;
+			border-right: 0;
+			border-left: 0;
+		}
+			.scheduleEquipmentsContent .lastColumnContainer .iconsArea a.deleteProjectIco {
+				left: 52px;
+			}
+			
+			.scheduleEquipmentsContent .lastColumnContainer .iconsArea a.editIco {
+				left: 12px;
+			}
+
+/* .scheduleAddEquipmentsContent */
+.scheduleAddEquipmentsContent .defaultForm input.length {
+	width: 1055px ;
+}
+
+/* .scheduleEditEquipmentsContent */
+.scheduleEditEquipmentsContent .tableContainer input.tag {
+	width: 68px;
+}
+
+/* .scheduleRemarksContent */
+.scheduleRemarksContent #scheduleListTable .col1 {
+	width: 72px;
+	padding-left: 0;
+}
+
+.scheduleRemarksContent #scheduleListTable .col2 {
+	width: 180px;
+}
+
+.scheduleRemarksContent #scheduleListTable .col3 {
+	width: 930px;
+}
+
+	.scheduleRemarksContent .tableDefault .scrollable td {
+		line-height: 18px;
+		vertical-align: middle;
+		padding: 8px 0;
+	}
+		
+		.scheduleRemarksContent .tableDefault .textLeft {
+			text-align: left;
+		}
+		
+		.scheduleRemarksContent .tableDefault .textLeft p {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+			.scheduleRemarksContent .tableDefault .iconsArea a.deleteProjectIco {
+				left: 52px;
+			}
+						
+			.scheduleRemarksContent .tableDefault .iconsArea a.editIco {
+				left: 12px;
+			}
+
+/* .scheduleAddRemarksContent */
+.textareaText,
+textarea {
+	border: 1px solid #009a49;
+	border-radius: 3px;
+	color: #515965;
+	font-size: 12px;
+	padding: 8px;
+	box-shadow: 2px 2px 2px #eaeaea inset;
+	line-height: 16px;
+	display: inline-block;
+  font-family: Arial;
+}
+.textareaText:focus{
+	outline: none;
+}
+.scheduleAddRemarksContent .textareaText {
+	float: left;
+	width: 1042px;
+	height: 90px;
+	margin-left: 9px;
+}
+
+.tableDefault input.datapickerHasValue{
+  background-position: 98px -10px;
+}
+
+.equipmentsTableScroll{
+	max-height: 700px;
+	overflow-y: hidden;
+}
+
+.hidePercent{
+  display: none;
+}
+
+/* select input */
+.selectInput120 .custom-combobox-input,
+.selectInput150 .custom-combobox-input,
+.selectInput295 .custom-combobox-input,
+.selectInput395 .custom-combobox-input {
+	margin-left: 0;
+}
+.selectInput120 .custom-combobox a.ui-button,
+.selectInput125 .custom-combobox a.ui-button,
+.selectInput150 .custom-combobox a.ui-button,
+.selectInput295 .custom-combobox a.ui-button,
+.selectInput395 .custom-combobox a.ui-button {
+	position: absolute;
+	top: -4px;
+	right: -2px;
+}
+	.selectInput120 .custom-combobox-input {
+		width: 102px;
+		padding-right: 20px;
+	}
+	.selectInput125 .custom-combobox-input {
+		width: 124px;
+	}
+	.selectInput150 .custom-combobox-input {
+		width: 148px;
+	}
+	.selectInput295 .custom-combobox-input {
+		width: 294px;
+	}
+	.selectInput395 .custom-combobox-input {
+		width: 392px;
+	}
+	
+/* interlaced color */
+.interlacedColor tr:nth-child(odd) td {
+	background:#fff;
+}
+.interlacedColor tr:nth-child(even) td {
+	background:#f9f9f9;
+}
+	
+/* position scrollBar */
+.positionScrollBar {
+	position: relative;
+}
+	.positionScrollBar #scheduleSummaryVerticalScrollBar {
+		top: 48px !important;
+		right: 1px;
+		left: auto !important;
+	}
+		.scheduleEquipmentsContent .positionScrollBar .tableDefault th {
+			border: 1px solid #c8c8c8;
+		}
+		.tableDefault .scrollableBox .scrollable {
+			overflow-y: auto;
+		}	
+
+.scheduleEquipmentsScroll{
+  height: 489px!important;
+}
+
+.scheduleRemarksScroll{
+  height: 530px!important;
+}
+
+.checkBoxChecked{
+  background-position: -17px -57px!important;
+}
+
+span.cbText:hover{
+  cursor: pointer;
+}
+
+.actionTh:hover{
+  cursor:default;
+}
+
+.chartTitle{
+ font-style:italic;
+}
+
+.tableContainer #projectPermissionTable a.deleteUserPermissionIco{
+    left: 50%;
+}
+
+.textIndent7 {
+	text-indent: 7px;
+}
+
+/* #columnsTable2ScrollBar */
+#columnsTable2ScrollBar .scheduleSummaryTable2 {
+	width: 980px;
+}
+	#columnsTable2ScrollBar .scheduleSummaryTable2 .scrollBoxTd {
+		padding: 0;
+	}
+	#columnsTable2ScrollBar .scheduleSummaryTable2 .scrollBoxTd table {
+		width: 100%;
+	}
+	#columnsTable2ScrollBar .scheduleSummaryTable2 .first{
+		width: 58px !important;
+	}
+	#columnsTable2ScrollBar .scheduleSummaryTable2 .scrollBoxTd table .noLeftBorder {
+		width: 40px !important;
+	}
+	#columnsTable2ScrollBar .scheduleSummaryTable2 td {
+		padding: 5px 0 5px 0;	
+	}
+	
+	#columnsTable2ScrollBar .scheduleSummaryTable2 .rowTwo td {
+		padding: 5px 0 6px 0;	
+	}
+	#columnsTable2ScrollBar .scheduleSummaryTable2 .scrollBoxTd table td {
+		padding: 5px 0;	
+	}
+	#columnsTable2ScrollBar .scheduleSummaryTable2 .scrollBoxTd table .rowTwo td {
+		padding: 5px 0 6px 0!important;	
+	}
+		#columnsTable2ScrollBar .productivityRows td {
+			padding: 0;
+			height: 20px!important;
+		}
+	
+
+		/* #percentTable2ScrollBar */
+		#percentTable2ScrollBar .scheduleSummaryTable2 {
+			width: 1150px;
+		}
+		#percentTable2ScrollBar .scheduleSummaryTable2 .width60{
+			width: 58px !important;
+		}
+			#percentTable2ScrollBar .scheduleSummaryTable2 .scrollBoxTd table {
+				width: 100%;
+			}
+			#percentTable2ScrollBar #scheduleSummaryVerticalScroll td {
+				width: 90px !important;
+			}
+			#percentTable2ScrollBar #scheduleSummaryVerticalScroll .width60 {
+				width: 64px !important;
+			}
+			
+		/* #forecastTable2ScrollBar */
+		#forecastTable2ScrollBar .scheduleSummaryTable2 {
+			width: 1100px;
+		}
+		#forecastTable2ScrollBar .scheduleSummaryTable2 .width60{
+			width: 58px !important;
+		}
+			#forecastTable2ScrollBar #scheduleSummaryVerticalScroll td {
+				width: 88px !important;
+			}
+			#forecastTable2ScrollBar #scheduleSummaryVerticalScroll .width60 {
+				width: 60px !important;
+			}
+			
+		
+		/* #hoursTable2ScrollBar */
+		#hoursTable2ScrollBar .scheduleSummaryTable2 {
+			width: 1150px;
+		}
+		#hoursTable2ScrollBar .scheduleSummaryTable2 .width60{
+			width: 58px !important;
+		}
+			#hoursTable2ScrollBar .scheduleSummaryTable2 .scrollBoxTd table {
+				width: 100%;
+			}
+			#hoursTable2ScrollBar #scheduleSummaryVerticalScroll td {
+				width: 88px !important;
+			}
+			#hoursTable2ScrollBar #scheduleSummaryVerticalScroll .width60 {
+				width: 54px !important;
+			}
+			
+		
+			/* #percentHoursTable2ScrollBar */
+			#percentHoursTable2ScrollBar .scheduleSummaryTable2 {
+				width: 1180px;
+			}
+			#percentHoursTable2ScrollBar .scheduleSummaryTable2 .width60{
+				width: 58px !important;
+			}
+				#percentHoursTable2ScrollBar #scheduleSummaryVerticalScroll .width60 {
+					width:80px !important;
+				}
+			
+		
+			/* #percentForecastTable2ScrollBar */
+			#percentForecastTable2ScrollBar .scheduleSummaryTable2 {
+				width: 1180px;
+			}
+			#percentForecastTable2ScrollBar .scheduleSummaryTable2 .width60{
+				width: 58px !important;
+			}
+	
+
+			/* #cumulativeForecastTable2ScrollBar */
+			#cumulativeForecastTable2ScrollBar #scheduleSummaryVerticalScroll td {
+				width: 78px !important;
+			}
+			
+				#cumulativeForecastTable2ScrollBar #scheduleSummaryVerticalScroll .noLeftBorder {
+					width: 79px !important;
+				}
+				
+		
+		#hoursForecastTable2ScrollBar .scheduleSummaryTable2 .col1{
+		  width: 57px !important;
+		}
+		
+		#hoursForecastTable2ScrollBar .scheduleSummaryTable2 .col2{
+		  width: 57px !important;
+		}
+		
+		#hoursForecastTable2ScrollBar .scheduleSummaryTable2 .col3{
+		  width: 57px !important;
+		}
+		
+		#columnsTable2ScrollBar .scheduleSummaryTable2 td.blankRow{
+		  height: 16px!important;
+		}
+		
+		.width1400 {
+			width: 1391px !important;
+		}
+		#cumulativeView #scheduleSummaryVerticalScroll2 .columnSeparator  {
+			width: 5px !important;
+		}
+		#cumulativeView #scheduleSummaryVerticalScroll2 .noLeftBorder {
+			width: 72px !important;
+		}
+		#weeklyView #scheduleSummaryVerticalScroll td,
+		#cumulativeView #scheduleSummaryVerticalScroll2 td {
+			width: 50px !important;
+		}
+		#cumulativeView .width100,
+		#cumulativeView #scheduleSummaryVerticalScroll2 .width100 {
+			width: 72px !important;
+		}
+		
+		/*.scheduleMaterialsContent th span.tbHeader{
+	    background: url(../images/table_style2_th_bg.png) repeat-x top;
+	    overflow: hidden;
+    }*/
+    
+    .scheduleSummaryPage #scheduleSummaryTable1Scrolling,
+    .scheduleSummaryPage #scheduleSummaryVerticalScroll,
+    .scheduleSummaryPage #oneColumnTableScrolling,
+    .scheduleSummaryPage #scheduleSummaryVerticalScrollBar{
+      max-height:300px!important;
+    }
+    
+    .scheduleMaterialsContent #scheduleSummaryTable1Scrolling,
+    .scheduleMaterialsContent #scheduleSummaryVerticalScroll,
+    .scheduleMaterialsContent #scheduleSummaryVerticalScrollBar,
+    .scheduleMaterialsContent #scheduleSummaryVerticalScroll2{
+      max-height:500px!important;
+    }
+    
+    .scheduleEquipmentsContent th.lastColumn,
+    .scheduleEquipmentsContent td.lastColumn{
+      /*width: 80!important;*/
+    }
+	#scheduleSummaryTable1 .scheduleEquipmentsScrolTable {
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+	#scheduleSummaryTable1Scrolling .equipmentsIconsArea .editIco {
+		left: 20px;
+	}
+	#scheduleSummaryTable1Scrolling .equipmentsIconsArea .deleteProjectIco {
+		left: 58px;
+	}
+	.scheduleMaterialsTableBox #scheduleSummaryTable1 .width215 {
+		width: 160px !important;
+	}
+	.scheduleMaterialsTableBox #scheduleSummaryTable1 .width75 {
+		width: 55px;
+	}
+	.scheduleMaterialsTableBox #scheduleSummaryTable1 .width70 {
+		width: 53px;
+	}
+	.scheduleMaterialsTableBox #scheduleSummaryTable1 #scheduleSummaryTable1Scrolling .width70 {
+		width: 54px;
+	}
+	.scheduleMaterialsTableBox .width600 {
+		width: 583px !important;
+	}
+	.scheduleMaterialsTableBox .width600 .width1300 {
+		width: 764px !important;
+	}
+	.scheduleMaterialsTableBox .width600 .width1400 {
+		width: 845px !important;
+	}
+	
+	.height400{
+	  height: 400px;
+	}
+
+    .hiddenElement {
+        display: none;
+    }
+
+    #cboxTitle {
+        display: none!important;
+    }
+
+    .loginBox .formButtons .disabled {
+        color: #808080 !important;
+        border-color: #808080;
+        cursor: default!important;
+    }
+
+    .closeModal {
+        cursor: pointer;
+    }
+
+    .alignCenter {
+        left: inherit!important;
+    }
+.ui-widget-content {
+    background: #ffffff;
+}
+.ui-widget-content a {
+    color: green;
+}
+.defaultPanel .panelContent .ui-slider-handle {
+    display: none;
+}
+.panelContent .defaultFormInner .readonly {
+    margin-left: 10px;
+}
